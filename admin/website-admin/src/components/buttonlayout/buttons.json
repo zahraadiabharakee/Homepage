@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_buttonlayout_buttons",
+  "info": {
+    "displayName": "Buttons",
+    "icon": "water"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

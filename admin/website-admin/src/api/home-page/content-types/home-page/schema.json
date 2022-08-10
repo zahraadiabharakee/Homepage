@@ -1,0 +1,90 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BannerLayout": {
+      "displayName": "Banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "bannerlayout.banner"
+    },
+    "Navbar": {
+      "displayName": "navbar",
+      "type": "component",
+      "repeatable": false,
+      "component": "navbarlayout.navbar"
+    },
+    "clients": {
+      "displayName": "client",
+      "type": "component",
+      "repeatable": false,
+      "component": "clientlayout.client"
+    },
+    "cards": {
+      "displayName": "cards",
+      "type": "component",
+      "repeatable": false,
+      "component": "cardslayout.cards"
+    },
+    "projects": {
+      "displayName": "projects",
+      "type": "component",
+      "repeatable": false,
+      "component": "projectlayout.projects"
+    },
+    "contactbox": {
+      "displayName": "Contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "contactlayout.contact"
+    },
+    "Footer": {
+      "displayName": "footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "footerlayout.footer"
+    },
+    "demo": {
+      "displayName": "demo",
+      "type": "component",
+      "repeatable": false,
+      "component": "demo-layout.demo"
+    },
+    "products": {
+      "displayName": "products",
+      "type": "component",
+      "repeatable": false,
+      "component": "products-layout.products"
+    },
+    "featrures": {
+      "displayName": "features",
+      "type": "component",
+      "repeatable": false,
+      "component": "features-layout.features",
+      "required": true
+    },
+    "cms": {
+      "displayName": "cms",
+      "type": "component",
+      "repeatable": false,
+      "component": "cms-layout.cms",
+      "required": true
+    },
+    "email": {
+      "displayName": "Email",
+      "type": "component",
+      "repeatable": false,
+      "component": "email-layout.email"
+    }
+  }
+}

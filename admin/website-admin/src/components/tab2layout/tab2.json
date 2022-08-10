@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_tab2layout_tab2s",
+  "info": {
+    "displayName": "tab2",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "Description": {
+      "type": "text"
+    }
+  }
+}

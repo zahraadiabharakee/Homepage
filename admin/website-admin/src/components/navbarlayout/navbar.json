@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_navbarlayout_navbars",
+  "info": {
+    "displayName": "navbar",
+    "icon": "yen-sign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Button3": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttonlayout.buttons",
+      "required": true
+    },
+    "tab1": {
+      "displayName": "navtabs",
+      "type": "component",
+      "repeatable": true,
+      "component": "navtabslayout.navtabs",
+      "required": true
+    },
+    "tab2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navtabslayout.navtabs",
+      "required": true
+    },
+    "tab3": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navtabslayout.navtabs",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Tab1": {
+      "type": "string",
+      "required": true
+    },
+    "Tab2": {
+      "type": "string",
+      "required": true
+    },
+    "Tab3": {
+      "type": "string"
+    }
+  }
+}

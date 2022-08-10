@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_contentlayout_contents",
+  "info": {
+    "displayName": "content",
+    "icon": "skating",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

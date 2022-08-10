@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_iconslayout_icons",
+  "info": {
+    "displayName": "icons",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string",
+      "required": true
+    },
+    "instagram": {
+      "type": "string",
+      "required": true
+    },
+    "linkedin": {
+      "type": "string",
+      "required": true
+    },
+    "twitter": {
+      "type": "string",
+      "required": true
+    },
+    "youtube": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

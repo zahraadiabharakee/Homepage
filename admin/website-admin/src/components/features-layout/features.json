@@ -1,0 +1,117 @@
+{
+  "collectionName": "components_features_layout_features",
+  "info": {
+    "displayName": "features",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "features_title": {
+      "type": "string",
+      "required": true
+    },
+    "features_p": {
+      "type": "string",
+      "required": true
+    },
+    "feature_1_title": {
+      "type": "string",
+      "required": true
+    },
+    "feature_1_description": {
+      "type": "string",
+      "required": true
+    },
+    "feature_1_image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feature_2_title": {
+      "type": "string",
+      "required": true
+    },
+    "feature_2_description": {
+      "type": "string",
+      "required": true
+    },
+    "feature_2_image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "feature_3_title": {
+      "type": "string",
+      "required": true
+    },
+    "feature_3_description": {
+      "type": "string",
+      "required": true
+    },
+    "feature_3_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "feature_4_title": {
+      "type": "string",
+      "required": true
+    },
+    "feature_4_description": {
+      "type": "string",
+      "required": true
+    },
+    "feature_5_title": {
+      "type": "string",
+      "required": true
+    },
+    "feature_5_description": {
+      "type": "string",
+      "required": true
+    },
+    "feature_6_title": {
+      "type": "string",
+      "required": true
+    },
+    "feature_6_description": {
+      "type": "string",
+      "required": true
+    },
+    "feature_6_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "feature_5_image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

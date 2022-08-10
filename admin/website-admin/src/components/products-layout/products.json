@@ -1,0 +1,150 @@
+{
+  "collectionName": "components_products_layout_products",
+  "info": {
+    "displayName": "products"
+  },
+  "options": {},
+  "attributes": {
+    "products_media": {
+      "allowedTypes": [
+        "files",
+        "videos",
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "product_1_title": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_p1": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_p2": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_p3": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_p4": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_p5": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_p6": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_label1": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_label2": {
+      "type": "string"
+    },
+    "product_1_link1": {
+      "type": "string",
+      "required": true
+    },
+    "product_1_link2": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_title": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_p1": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_p2": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_p3": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_p4": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_p5": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_p6": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_link1": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_link2": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_label1": {
+      "type": "string",
+      "required": true
+    },
+    "product_2_label2": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_title": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_p1": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_p2": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_p3": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_p4": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_p5": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_p6": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_link1": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_link2": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_label1": {
+      "type": "string",
+      "required": true
+    },
+    "product_3_label2": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

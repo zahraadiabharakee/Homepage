@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navtabslayout_navtabs",
+  "info": {
+    "displayName": "navtabs",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

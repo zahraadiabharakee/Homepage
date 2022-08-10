@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_demo_layout_demos",
+  "info": {
+    "displayName": "demo"
+  },
+  "options": {},
+  "attributes": {
+    "demo_title": {
+      "type": "string",
+      "required": true
+    },
+    "demo_description": {
+      "type": "string",
+      "required": true
+    },
+    "demo_label": {
+      "type": "string",
+      "required": true
+    },
+    "demo_link": {
+      "type": "string",
+      "required": true
+    },
+    "demo_media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

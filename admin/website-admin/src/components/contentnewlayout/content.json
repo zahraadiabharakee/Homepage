@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_contentnewlayout_contents",
+  "info": {
+    "displayName": "content",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "content1": {
+      "type": "string",
+      "required": true
+    },
+    "content2": {
+      "type": "string",
+      "required": true
+    },
+    "content3": {
+      "type": "string",
+      "required": true
+    },
+    "content4": {
+      "type": "string",
+      "required": true
+    },
+    "content5": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

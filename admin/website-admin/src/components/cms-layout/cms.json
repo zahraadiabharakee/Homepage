@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_cms_layout_cms",
+  "info": {
+    "displayName": "cms"
+  },
+  "options": {},
+  "attributes": {
+    "cms_title": {
+      "type": "string",
+      "required": true
+    },
+    "cms_description": {
+      "type": "text",
+      "required": true
+    },
+    "cms_label": {
+      "type": "string",
+      "required": true
+    },
+    "cms_link": {
+      "type": "string",
+      "required": true
+    },
+    "cms_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_email_layout_emails",
+  "info": {
+    "displayName": "Email",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "email_title1": {
+      "type": "string",
+      "required": true
+    },
+    "email_placeholder": {
+      "type": "string",
+      "required": true
+    },
+    "email_button_label": {
+      "type": "string",
+      "required": true
+    },
+    "email_title2": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

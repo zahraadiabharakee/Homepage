@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_contactlayout_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "utensil-spoon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "nameinput": {
+      "type": "string",
+      "required": true
+    },
+    "lastnameinput": {
+      "type": "string",
+      "required": true
+    },
+    "messageinput": {
+      "type": "text",
+      "required": true
+    },
+    "submitbutton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttonlayout.buttons"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "Email": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "sendbutton": {
+      "type": "string"
+    },
+    "sendbuttonlink": {
+      "type": "string"
+    }
+  }
+}

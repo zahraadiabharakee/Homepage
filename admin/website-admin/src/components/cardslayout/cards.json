@@ -1,0 +1,100 @@
+{
+  "collectionName": "components_cardslayout_cards",
+  "info": {
+    "displayName": "cards",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "card1description": {
+      "type": "string"
+    },
+    "card1button": {
+      "type": "string"
+    },
+    "card3description": {
+      "type": "string"
+    },
+    "card3button": {
+      "type": "string"
+    },
+    "A_cardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "A_cardDescription": {
+      "type": "text",
+      "required": true
+    },
+    "A_cardLabel": {
+      "type": "string",
+      "required": true
+    },
+    "A_cardLink": {
+      "type": "string"
+    },
+    "B_cardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "B_cardLabel": {
+      "type": "string",
+      "required": true
+    },
+    "B_cardDescription": {
+      "type": "text",
+      "required": true
+    },
+    "B_cardLink": {
+      "type": "string",
+      "required": true
+    },
+    "C_cardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "C_cardDescription": {
+      "type": "text",
+      "required": true
+    },
+    "C_cardLabel": {
+      "type": "string",
+      "required": true
+    },
+    "C_cardLink": {
+      "type": "string",
+      "required": true
+    },
+    "C_cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "B_cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "A_cardImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

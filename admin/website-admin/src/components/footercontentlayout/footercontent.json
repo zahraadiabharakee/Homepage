@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_footercontentlayout_footercontents",
+  "info": {
+    "displayName": "footercontent",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "content1": {
+      "type": "string",
+      "required": true
+    },
+    "content2": {
+      "type": "string",
+      "required": true
+    },
+    "content3": {
+      "type": "string",
+      "required": true
+    },
+    "content4": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

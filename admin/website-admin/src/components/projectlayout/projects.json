@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_projectlayout_projects",
+  "info": {
+    "displayName": "projects",
+    "icon": "plus-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description1": {
+      "type": "string",
+      "required": true
+    },
+    "Description2": {
+      "type": "string"
+    },
+    "Description3": {
+      "type": "string"
+    },
+    "tab1": {
+      "type": "string"
+    },
+    "tab2": {
+      "type": "string"
+    },
+    "tab3": {
+      "type": "string"
+    },
+    "tab1_button_link": {
+      "type": "string",
+      "required": true
+    },
+    "tab1_button_label": {
+      "type": "string",
+      "required": true
+    },
+    "tab2_button_link": {
+      "type": "string",
+      "required": true
+    },
+    "tab2_button_label": {
+      "type": "string",
+      "required": true
+    },
+    "tab3_button_link": {
+      "type": "string",
+      "required": true
+    },
+    "tab3_button_label": {
+      "type": "string",
+      "required": true
+    },
+    "Description_A": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

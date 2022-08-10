@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_bannerlayout_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "admin": {
+      "type": "string",
+      "required": true
+    },
+    "linkAdmin": {
+      "type": "string",
+      "required": true
+    },
+    "front": {
+      "type": "string",
+      "required": true
+    },
+    "linkFront": {
+      "type": "string"
+    },
+    "movingcontent1": {
+      "type": "string"
+    }
+  }
+}

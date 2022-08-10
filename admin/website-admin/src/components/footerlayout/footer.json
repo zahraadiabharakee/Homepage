@@ -1,0 +1,94 @@
+{
+  "collectionName": "components_footerlayout_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Section1": {
+      "type": "string",
+      "required": true
+    },
+    "section1a": {
+      "type": "string",
+      "required": true
+    },
+    "section1b": {
+      "type": "string"
+    },
+    "section1c": {
+      "type": "string"
+    },
+    "section1d": {
+      "type": "string"
+    },
+    "section1e": {
+      "type": "string"
+    },
+    "Section2": {
+      "type": "string",
+      "required": true
+    },
+    "section2a": {
+      "type": "string",
+      "required": true
+    },
+    "section2b": {
+      "type": "string",
+      "required": true
+    },
+    "section2c": {
+      "type": "string"
+    },
+    "section2d": {
+      "type": "string"
+    },
+    "Section3": {
+      "type": "string",
+      "required": true
+    },
+    "section3a": {
+      "type": "string",
+      "required": true
+    },
+    "section3b": {
+      "type": "string"
+    },
+    "section3c": {
+      "type": "string"
+    },
+    "section3d": {
+      "type": "string"
+    },
+    "Section4": {
+      "type": "string",
+      "required": true
+    },
+    "section4a": {
+      "type": "string"
+    },
+    "section4b": {
+      "type": "string"
+    },
+    "section4c": {
+      "type": "string"
+    },
+    "section4d": {
+      "type": "string"
+    },
+    "footer_p": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
