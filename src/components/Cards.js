@@ -1,8 +1,7 @@
 import React from 'react';
 import CardItem from './CardItem';
-import gif1 from "../assets/img/kx-hp-5_oxzumy.webp";
-import gif2 from "../assets/img/kx-hp-3_nqby39.webp";
-import gif3 from "../assets/videos/giphy.gif";
+import Heading from "./common/heading/Heading";
+
 import {constants} from "../Const"
 export const Cards = (props) => {
   if(props.page){
@@ -21,7 +20,7 @@ export const Cards = (props) => {
   return (
 
     <div className='cards'>
-      
+             <Heading subtitle={props.page.Card_Title} />
          <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">

@@ -126,14 +126,19 @@
       "type": "string"
     },
     "F_cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Card_Title": {
+      "type": "string",
+      "required": true
     }
   }
 }

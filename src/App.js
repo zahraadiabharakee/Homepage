@@ -52,12 +52,13 @@ function App() {
       <Aboutus page={homePage.cards}/>
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
+      <Cards page={homePage.cards} />
       <Features page={homePage.features} />
       <Team />
-      <Cards page={homePage.cards} />
+      <Cms page={homePage.cms} />
       <Projects page={homePage.projects}/>
       <Contact page={homePage.contactbox} />
-   
+      
       <Footer page={homePage.Footer}/>
        
      
