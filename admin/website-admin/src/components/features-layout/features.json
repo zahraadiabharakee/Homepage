@@ -112,6 +112,16 @@
         "files",
         "videos"
       ]
+    },
+    "feature_4_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

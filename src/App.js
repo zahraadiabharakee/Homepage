@@ -16,13 +16,14 @@ import {Cms} from "./components/cms/Cms";
 import {Demo} from "./components/demo/Demo";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import CourseHome from "./components/allcourses/CourseHome"
+import {Features} from "./components/AllFeatures/Features"
 import Team from "./components/team/Team"
 import {Products } from "./components/products/Products"
 
 
 
 function App() {
+
   const [error, setError] = useState(null);
   const [homePage, setHomePage] = useState({ 
     Description: "",
@@ -168,7 +169,7 @@ function App() {
       <Cards page={homePage.cards} />
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
-      <CourseHome page={homePage.features} />
+      <Features page={homePage.features} />
       <Team />
       <Cms page={homePage.cms}/>
       <Projects page={homePage.projects}/>

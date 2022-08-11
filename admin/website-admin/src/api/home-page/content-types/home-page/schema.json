@@ -48,12 +48,6 @@
       "repeatable": false,
       "component": "contactlayout.contact"
     },
-    "Footer": {
-      "displayName": "footer",
-      "type": "component",
-      "repeatable": false,
-      "component": "footerlayout.footer"
-    },
     "demo": {
       "displayName": "demo",
       "type": "component",
@@ -66,7 +60,7 @@
       "repeatable": false,
       "component": "products-layout.products"
     },
-    "featrures": {
+    "features": {
       "displayName": "features",
       "type": "component",
       "repeatable": false,
@@ -85,6 +79,12 @@
       "type": "component",
       "repeatable": false,
       "component": "email-layout.email"
+    },
+    "Footer": {
+      "displayName": "Footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout-footer.footer"
     }
   }
 }

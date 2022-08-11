@@ -3,12 +3,16 @@ import { Container, Row, Col } from "reactstrap";
 
 import chooseImg from "../../assets/img/kx-hp-2_acgyai.webp";
 import "./choose-us.css";
-
+import {constants} from "../../Const"
 import ReactPlayer from "react-player";
 
 export const Chooseus = (props) =>  {
   const [showVideo, setShowVideo] = useState(false);
   if(props.page){
+      var image ="";
+      if(props.page.A_cardImage && props.page.A_cardImage.data && props.page.A_cardImage.data.length>0){
+       image = constants.link+props.page.A_cardImage.data[0].attributes.url ;
+      }
   return (
     <section>
       <Container>
@@ -33,7 +37,7 @@ export const Chooseus = (props) =>  {
                   height="350px"
                 />
               ) : (
-                <img src={chooseImg} alt="" className="w-100" />
+                <img src={image} alt="" className="w-100" />
               )}
 
               {!showVideo && (

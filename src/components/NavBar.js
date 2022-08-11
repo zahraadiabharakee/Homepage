@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import logo from "../assets/img/mangopulse.png";
-
+import {constants} from '../Const';
 export const NavBar = (props) => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -24,13 +23,16 @@ export const NavBar = (props) => {
 
   window.addEventListener('resize', showButton);
   if(props.page){
-
+    var image ="";
+    if(props.page.logo && props.page.logo.data && props.page.logo.data.length>0){
+     image = constants.link +props.page.logo.data[0].attributes.url ;
+    }
    return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
           <a to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <img src={logo} alt="Logo" />
+          <img src={image} alt="Logo" />
          
           </a>
           <div className='menu-icon' onClick={handleClick}>

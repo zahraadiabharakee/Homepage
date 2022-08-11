@@ -4,9 +4,13 @@ import { Container, Row, Col } from "reactstrap";
 import productsImg from "../../assets/videos/cms-development.gif";
 import CountUp from "react-countup";
 import "./products.css";
-
+import {constants} from "../../Const" ;
 export const Products = (props) =>  {
   if(props.page){
+    var gif ="";
+    if(props.page.products_media && props.page.products_media.data && props.page.products_media.data.length>0  && props.page.products_media.data.attributes){
+     gif = constants.link+props.page.products_media.data[0].attributes.url ;
+    }
   return (
     <section>
       <Container>

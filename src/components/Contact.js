@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/marketing.svg";
-
+import {constants} from "../Const"
 import TrackVisibility from 'react-on-screen';
 
 export const Contact = (props) => {
@@ -43,16 +43,17 @@ export const Contact = (props) => {
     }
   };
   if(props.page){
+
+   var image ="";
+   if(props.page.image && props.page.image.data && props.page.image.data.length>0){
+    image = constants.link+props.page.image.data[0].attributes.url ;
+   }
   return (
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
-              }
-            </TrackVisibility>
+             <img src={image} alt="Contact Us"/>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
@@ -92,5 +93,6 @@ export const Contact = (props) => {
       </Container>
     </section>
   )
+  
   }
 }

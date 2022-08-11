@@ -7,31 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "Button3": {
-      "type": "component",
-      "repeatable": true,
-      "component": "buttonlayout.buttons",
-      "required": true
-    },
-    "tab1": {
-      "displayName": "navtabs",
-      "type": "component",
-      "repeatable": true,
-      "component": "navtabslayout.navtabs",
-      "required": true
-    },
-    "tab2": {
-      "type": "component",
-      "repeatable": true,
-      "component": "navtabslayout.navtabs",
-      "required": true
-    },
-    "tab3": {
-      "type": "component",
-      "repeatable": true,
-      "component": "navtabslayout.navtabs",
-      "required": true
-    },
     "logo": {
       "type": "media",
       "multiple": true,

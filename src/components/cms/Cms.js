@@ -3,13 +3,19 @@ import { Container, Row, Col } from "reactstrap";
 
 import cmsImg from "../../assets/img/illustration.jpg";
 import "./cms.css";
-
+import {constants} from "../../Const"
 import ReactPlayer from "react-player";
 
 export const Cms = (props) =>  {
   const [showVideo, setShowVideo] = useState(false);
   if(props.page){
+    var image ="";
+    if(props.page.cms_image && props.page.cms_image.data  && props.page.cms_image.data.attributes){
+     image = constants.link+props.page.cms_image.data.attributes.url ;
+    }
   return (
+
+    
     <section>
       <Container>
         <Row>
@@ -25,7 +31,7 @@ export const Cms = (props) =>  {
 
           <Col lg="6" md="6">
             <div className="cms__img">
-                <img src={cmsImg} alt="" className="w-100" />
+                <img src={image} alt="" className="w-100" />
           
             </div>
           </Col>

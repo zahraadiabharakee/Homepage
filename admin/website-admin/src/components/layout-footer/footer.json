@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_footer_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "Section1": {
+      "type": "string"
+    },
+    "section1a": {
+      "type": "string"
+    },
+    "section1b": {
+      "type": "string"
+    },
+    "section1c": {
+      "type": "string"
+    },
+    "section1d": {
+      "type": "string"
+    },
+    "section1e": {
+      "type": "string"
+    }
+  }
+}
