@@ -52,8 +52,8 @@ function App() {
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
       <Article page={homePage.Team}/>
-      
       <Features page={homePage.features} />
+      <Team />
       <Cms page={homePage.cms} />
       <Projects page={homePage.projects}/>
       <Contact page={homePage.contactbox} />

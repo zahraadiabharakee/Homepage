@@ -11,7 +11,7 @@
 }
 
 .cms__content {
-  
+  padding-top: 90px !important;
   padding-left: 50px;
   padding-bottom: 10px;
 }

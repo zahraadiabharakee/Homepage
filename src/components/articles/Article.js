@@ -21,7 +21,7 @@ export const Article = (props) => {
   return (
     <>
      <section className="blog">
-      <Heading subtitle="Blog" />
+      <Heading subtitle="Blog" title="Creating your web from scratch with the dedicated experience development team can be very expensive. "/>
       <Container>
         <Row className="align-items-center">
           <Col size={9} md={4}>

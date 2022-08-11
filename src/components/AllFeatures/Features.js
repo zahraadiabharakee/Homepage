@@ -1,8 +1,9 @@
 import React from "react"
 import "./features.css"
-
+import { Container, Row, Col } from "reactstrap";
 import Heading from "../common/heading/Heading";
 import {constants} from "../../Const" ;
+
 export const Features = (props) =>  {
   
   if(props.page){
@@ -33,9 +34,10 @@ export const Features = (props) =>  {
       return (
         <>
           <section className='online'>
-            <div className='container'>
+            <Container>
+            <Row className="align-items-center">
               <Heading subtitle={props.page.features_title} title={props.page.features_p} />
-              <div className='content grid3'>
+                  <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image1} />
@@ -43,6 +45,8 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_1_title}</h1>
                     <p>{props.page.feature_1_description}</p>
                   </div>
+                  </Col>
+                  <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image2} alt='' />
@@ -50,6 +54,8 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_2_title}</h1>
                     <p>{props.page.feature_2_description}</p>
                   </div>
+                  </Col>
+                  <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image3} alt='' /*className='show' */ />
@@ -57,6 +63,8 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_3_title}</h1>
                     <p>{props.page.feature_3_description}</p>
                   </div>
+                  </Col>
+                  <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image4} alt='' />
@@ -64,6 +72,8 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_4_title}</h1>
                     <p>{props.page.feature_4_description}</p>
                   </div>
+                  </Col>
+                  <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image5} alt=''  />
@@ -71,6 +81,8 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_5_title}</h1>
                     <p>{props.page.feature_5_description}</p>
                   </div>
+                  </Col>
+                  <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image6} alt='' />
@@ -78,8 +90,28 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_6_title}</h1>
                     <p>{props.page.feature_6_description}</p>
                   </div>
-              </div>
-            </div>
+                  </Col>
+                  <Col size={9} md={3}>
+                  <div className='box'>
+                    <div className='img'>
+                      <img src={image6} alt='' />
+                    </div>
+                    <h1 className="CourseName">{props.page.feature_6_title}</h1>
+                    <p>{props.page.feature_6_description}</p>
+                  </div>
+                  </Col>
+                  <Col size={9} md={3}>
+                  <div className='box'>
+                    <div className='img'>
+                      <img src={image6} alt='' />
+                    </div>
+                    <h1 className="CourseName">{props.page.feature_6_title}</h1>
+                    <p>{props.page.feature_6_description}</p>
+                  </div>
+                  </Col>
+                  
+              </Row>
+            </Container>
           </section>
         </>
         );

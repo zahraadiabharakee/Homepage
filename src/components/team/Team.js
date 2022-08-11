@@ -9,11 +9,7 @@ const Team = () => {
   return (
     <>
        <Awrapper />
-      <section className='team'>
-        <div className='team-section'>
-          <TeamCard />
-        </div>
-      </section>
+ 
      
     </>
   )
