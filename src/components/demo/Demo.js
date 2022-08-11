@@ -12,7 +12,7 @@ export const Demo = (props) =>  {
      video = constants.link+props.page.demo_media.data[0].attributes.url ;
     }
   return (
-    <section className="Zal">
+    <section className="Zal" >
       <Container >
         <Row>
           <Col lg="6" md="6">

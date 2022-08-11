@@ -1,27 +1,93 @@
 {
   "collectionName": "components_layout_footer_footers",
   "info": {
-    "displayName": "Footer"
+    "displayName": "Footer",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Section1": {
+    "Section_1_title": {
+      "type": "string",
+      "required": true
+    },
+    "Section_1_paragraph_1": {
+      "type": "string",
+      "required": true
+    },
+    "Section_1_paragraph_2": {
+      "type": "string",
+      "required": true
+    },
+    "Section_1_paragraph_3": {
+      "type": "string",
+      "required": true
+    },
+    "Section_1_paragraph_4": {
       "type": "string"
     },
-    "section1a": {
+    "Section_2_title": {
+      "type": "string",
+      "required": true
+    },
+    "Section_2_paragraph_1": {
+      "type": "string",
+      "required": true
+    },
+    "Section_2_paragraph_2": {
+      "type": "string",
+      "required": true
+    },
+    "Section_2_paragraph_3": {
+      "type": "string",
+      "required": true
+    },
+    "Section_2_paragraph_4": {
+      "type": "string",
+      "required": true
+    },
+    "Section_3_title": {
+      "type": "string",
+      "required": true
+    },
+    "Section_3_paragraph_1": {
+      "type": "string",
+      "required": true
+    },
+    "Section_3_paragraph_2": {
+      "type": "string",
+      "required": true
+    },
+    "Section_3_paragraph_3": {
+      "type": "string",
+      "required": true
+    },
+    "Section_3_paragraph_4": {
       "type": "string"
     },
-    "section1b": {
+    "Section_4_title": {
+      "type": "string",
+      "required": true
+    },
+    "Section_4_paragraph_1": {
+      "type": "string",
+      "required": true
+    },
+    "Section_4_paragraph_2": {
       "type": "string"
     },
-    "section1c": {
+    "Section_4_paragraph_3": {
       "type": "string"
     },
-    "section1d": {
+    "Section_4_paragraph_4": {
       "type": "string"
     },
-    "section1e": {
-      "type": "string"
+    "Section_4_paragraph_5": {
+      "type": "string",
+      "required": true
+    },
+    "footer_copyrights": {
+      "type": "string",
+      "required": true
     }
   }
 }

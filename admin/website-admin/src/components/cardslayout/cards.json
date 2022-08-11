@@ -97,16 +97,35 @@
       ]
     },
     "D_cardImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "E_cardImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "card2description": {
+      "type": "text",
+      "required": true
+    },
+    "card2button": {
+      "type": "string"
+    },
+    "F_cardImage": {
       "allowedTypes": [
         "images",
         "files",
@@ -114,7 +133,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

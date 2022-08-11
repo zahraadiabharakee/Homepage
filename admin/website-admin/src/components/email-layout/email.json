@@ -6,10 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "email_title1": {
-      "type": "string",
-      "required": true
-    },
     "email_placeholder": {
       "type": "string",
       "required": true

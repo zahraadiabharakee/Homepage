@@ -14,6 +14,10 @@ export const Cards = (props) => {
     if(props.page.E_cardImage && props.page.E_cardImage.data  && props.page.E_cardImage.data.length>0){
      image2 = constants.link+props.page.E_cardImage.data[0].attributes.url ;
     }
+    var image3 ="";
+    if(props.page.F_cardImage && props.page.F_cardImage.data  && props.page.F_cardImage.data.attributes){
+     image3 = constants.link+props.page.F_cardImage.data.attributes.url ;
+    }
   return (
 
     <div className='cards'>
@@ -29,12 +33,17 @@ export const Cards = (props) => {
                    
                     />
                      <CardItem
+              src={image3}
+              text={props.page.card2description}
+              label={props.page.card2button}
+              path='/services'
+            />
+              <CardItem
               src={image2}
               text={props.page.card3button}
               label={props.page.card3description}
               path='/services'
             />
-            
                 </ul>
             </div>
          </div>

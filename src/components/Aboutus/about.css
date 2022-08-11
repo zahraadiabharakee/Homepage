@@ -19,7 +19,10 @@
 .about__img img {
   border-radius: 40px !important;
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-  
+
+}
+.about__img {
+  padding-bottom: 40px !important;
 }
 
 .about__content h2 {

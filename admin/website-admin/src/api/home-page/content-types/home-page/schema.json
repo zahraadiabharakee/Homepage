@@ -74,14 +74,7 @@
       "component": "cms-layout.cms",
       "required": true
     },
-    "email": {
-      "displayName": "Email",
-      "type": "component",
-      "repeatable": false,
-      "component": "email-layout.email"
-    },
     "Footer": {
-      "displayName": "Footer",
       "type": "component",
       "repeatable": false,
       "component": "layout-footer.footer"

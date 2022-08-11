@@ -818,7 +818,6 @@ h1 {
   width:140px;
   border-radius: 20px;
   margin: 12px auto;
-  
   text-align: center;
   
 }
@@ -827,7 +826,7 @@ h1 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 900px;
+ 
   width: 90%;
   margin: 0 auto;
 }
@@ -870,6 +869,7 @@ h1 {
 .fade-img {
   animation-name: fade-img;
   animation-duration: 2s;
+
 }
 
 .cards__item__pic-wrap::after {
