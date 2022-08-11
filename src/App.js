@@ -17,10 +17,9 @@ import {Demo} from "./components/demo/Demo";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import {Features} from "./components/AllFeatures/Features"
-import Team from "./components/team/Team"
+import {Article} from "./components/articles/Article";
 import {Products } from "./components/products/Products"
-
-
+import Team from "./components/team/Team";
 
 function App() {
 
@@ -52,15 +51,14 @@ function App() {
       <Aboutus page={homePage.cards}/>
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
-      <Cards page={homePage.cards} />
+      <Article page={homePage.Team}/>
+      
       <Features page={homePage.features} />
-      <Team />
       <Cms page={homePage.cms} />
       <Projects page={homePage.projects}/>
       <Contact page={homePage.contactbox} />
-      
       <Footer page={homePage.Footer}/>
-       
+     
      
         
      

@@ -78,6 +78,12 @@
       "type": "component",
       "repeatable": false,
       "component": "layout-footer.footer"
+    },
+    "Team": {
+      "displayName": "Team",
+      "type": "component",
+      "repeatable": false,
+      "component": "team-layout.team"
     }
   }
 }

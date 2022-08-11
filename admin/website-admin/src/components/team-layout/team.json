@@ -1,0 +1,75 @@
+{
+  "collectionName": "components_team_layout_teams",
+  "info": {
+    "displayName": "Team"
+  },
+  "options": {},
+  "attributes": {
+    "img1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title_1": {
+      "type": "string"
+    },
+    "title_2": {
+      "type": "string"
+    },
+    "title_3": {
+      "type": "string"
+    },
+    "date_1": {
+      "type": "string"
+    },
+    "date_2": {
+      "type": "string"
+    },
+    "date_3": {
+      "type": "string"
+    },
+    "subtitle_1": {
+      "type": "string"
+    },
+    "subtitle_2": {
+      "type": "string"
+    },
+    "subtitle_3": {
+      "type": "string"
+    },
+    "button_label_1": {
+      "type": "string"
+    },
+    "button_label_2": {
+      "type": "string"
+    },
+    "button_label_3": {
+      "type": "string"
+    }
+  }
+}

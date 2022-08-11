@@ -5,45 +5,7 @@ import {constants} from "../Const"
 import TrackVisibility from 'react-on-screen';
 
 export const Contact = (props) => {
-  const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
-  }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
-
-  const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-    }
-  };
   if(props.page){
-
    var image ="";
    if(props.page.image && props.page.image.data && props.page.image.data.length>0){
     image = constants.link+props.page.image.data[0].attributes.url ;
@@ -56,38 +18,31 @@ export const Contact = (props) => {
              <img src={image} alt="Contact Us"/>
           </Col>
           <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>{props.page.Title}</h2>
-                <form onSubmit={handleSubmit}>
+                <form >
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.firstName} placeholder={props.page.nameinput} onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                      <input type="text"  placeholder={props.page.nameinput} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder={props.page.lastnameinput} onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text"  placeholder={props.page.lastnameinput} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.email} placeholder={props.page.Email} onChange={(e) => onFormUpdate('email', e.target.value)} />
+                      <input type="email" placeholder={props.page.Email} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value={formDetails.phone} placeholder={props.page.number} onChange={(e) => onFormUpdate('phone', e.target.value)}/>
+                      <input type="tel"  placeholder={props.page.number} />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder={props.page.messageinput} onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button id="send" type="submit"><span>{buttonText}</span></button>
+                      <textarea rows="6"  placeholder={props.page.messageinput} ></textarea>
+                      <button id="send" type="submit"><span>Submit</span></button>
                     </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    }
                   </Row>
                 </form>
-              </div>}
-            </TrackVisibility>
+    
+          </Col>
+          <Col size={12} md={6}>
+           
           </Col>
         </Row>
       </Container>

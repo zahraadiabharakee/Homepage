@@ -439,7 +439,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 #y:hover {
   background-color: #fff !important;
-  color:#ffb236 !important;
+  color:#FFB236 !important;
   cursor: pointer;
 }
 #x {
@@ -570,7 +570,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project h2:after{
   display:block;
   height:10px;
-  background-color: #ffb236;
+  background-color: #FFB236;
   content:''; 
   width:140px;
   border-radius: 20px;
@@ -623,7 +623,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     height: 100%;
     background: #fff ;
     border-radius: 10px;
-    box-shadow: inset 3px 0 0 #ffb236;
+    box-shadow: inset 3px 0 0 #FFB236;
     color :#B8B8B8 !important;
     top: 0;
     left: 0;
@@ -678,7 +678,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: #ffb236da;
+  background: #FFB236da;
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -786,7 +786,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
-  background: #ffb23677;
+  background: #FFB23677;
   width: 0;
   height: 100%;
   position: absolute;
@@ -813,7 +813,7 @@ h1 {
 .cards h2:after{
   display:block;
   height:10px;
-  background-color: #ffb236 !important;
+  background-color: #FFB236 !important;
   content:''; 
   width:140px;
   border-radius: 20px;
@@ -1245,7 +1245,7 @@ button {
   margin: 30px 10px 0 0;
   border-radius: 3px;
   cursor: pointer;
-  background-color: #ffb236 !important;
+  background-color: #FFB236 !important;
   transition: 0.5s;
 }
 button i {
@@ -1273,7 +1273,7 @@ button:hover {
 #heading h3:after {
 display:block;
 height:10px;
-background-color: #ffb236;
+background-color: #FFB236;
 content:''; 
 width:140px;
 border-radius: 20px;
@@ -1341,12 +1341,12 @@ p {
   margin: 0;
   box-shadow: none;
   border-radius: 20px;
-  border: 2px solid #ffb236;
+  border: 2px solid #FFB236;
   width: 100%;
   transition: 0.5s;
 }
 .outline-btn:hover {
-  background-color: #ffb236;
+  background-color: #FFB236;
   color: #fff;
 }
 .grid3 {
@@ -1419,7 +1419,7 @@ p {
 }
 .new-email-bx::before {
   content: "";
-  background: #ffb236;
+  background: #FFB236;
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -1463,7 +1463,7 @@ p {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: #ffb236;
+  background: #FFB236;
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;

@@ -12,23 +12,25 @@ export const Cms = (props) =>  {
      image = constants.link+props.page.cms_image.data.attributes.url ;
     }
   return (
-    <section>
-      <Container>
-        <Row>
-          <Col lg="6" md="6">
-            <div className="cms__img">
-              <img src={image} alt="" className="w-100" />
-            </div>
-          </Col>
 
-          <Col lg="6" md="6">
-            <div className="cms__content">
+<section>
+      <Container>
+        <Row className="align-items-center">
+          <Col size={12} md={6}>
+          <div className="cms__img">
+          <div className="cms__content">
               <h2>{props.page.cms_title}</h2>
               <p>
               {props.page.cms_description}
               </p>
               <h4>{ props.page.cms_label} <i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            </div>  
             </div>
+          </Col>
+          <Col size={12} md={6}>
+       
+            <img src={image} alt="" className="w-100" />
+    
           </Col>
         </Row>
       </Container>
@@ -36,5 +38,4 @@ export const Cms = (props) =>  {
   );
   }
 };
-
 
