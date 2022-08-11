@@ -827,7 +827,7 @@ h1 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1120px;
+  max-width: 900px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1485,9 +1485,7 @@ p {
 @media screen and (max-width:991x)
 {
  
-  .demo__content h2 {
-    font-size: 20px !important;
-  }
+
   .demo__content p {
     margin-left: 100px !important;
   }
