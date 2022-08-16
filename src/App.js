@@ -18,9 +18,19 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import {Features} from "./components/AllFeatures/Features"
 import {Article} from "./components/articles/Article";
-import {Products } from "./components/products/Products"
+import {Products } from "./components/products/Products";
 import Team from "./components/team/Team";
-
+import {Stuff} from "./components/productsPage/Stuff";
+import {StuffTwo} from "./components/productsPage/StuffTwo";
+import {FeatureProducts} from "./components/productsPage/FeatureProducts";
+import {Ad} from "./components/productsPage/Ad";
+import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
+import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;
+import {CmsClients} from "./components/cms-product-page/CmsClients" ;
+import {CmsExperience} from "./components/cms-product-page/CmsExperience" ;
+import {CmsIntegrate} from "./components/cms-product-page/CmsIntegrate";
+import {CmsDemo} from "./components/cms-product-page/CmsDemo";
+import {CmsResources} from "./components/cms-product-page/CmsResources";
 function App() {
 
   const [error, setError] = useState(null);
@@ -54,14 +64,31 @@ function App() {
       <Article page={homePage.Team}/>
       <Features page={homePage.features} />
       <Team />
+     
       <Cms page={homePage.cms} />
       <Projects page={homePage.projects}/>
       <Contact page={homePage.contactbox} />
       <Footer page={homePage.Footer}/>
-     
-     
-        
-     
+
+      <StuffTwo page={homePage.cards}/>
+      <Stuff page={homePage.cards}/>
+      <StuffTwo page={homePage.cards}/>
+      <Stuff page={homePage.cards}/>
+  
+      <FeatureProducts page={homePage.features} />
+      <MailchimpForm />
+      <Footer page={homePage.Footer}/>
+      
+      <CmsBanner page={homePage.cards}/>
+      <CmsProducts page={homePage.products} />
+      <CmsExperience page={homePage.cards}/>
+      <CmsClients page={homePage.projects} />
+      <CmsResources page={homePage.cards} />
+      <CmsIntegrate page={homePage.features}/>
+      <Ad page={homePage.cards} />
+      <CmsDemo page={homePage.products} />
+      <MailchimpForm />
+      <Footer page={homePage.Footer}/>
     </div>
   );
 }

@@ -591,6 +591,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project .nav.nav-pills {
+ 
   width: 72%;
   height:100px;
   margin: 0 auto;
@@ -963,7 +964,7 @@ h1 {
  .footer-container {
   background-image: url('./assets/img/download2.png'); 
   background-attachment: fixed;
-   background: #f9f7f4;;
+   background: #f9f7f4;
   padding: 4rem 0 2rem 0;
   display: flex;
   flex-direction: column;
@@ -1100,6 +1101,9 @@ h1 {
 }
 .fa-twitter {
   color:#1DA1F2 !important;
+}
+.fa-github {
+  color: #000 !important;
 }
 .social-media {
   max-width: 1000px;
@@ -1395,18 +1399,19 @@ p {
 }
 /** Email **/
 .newsletter-bx {
-  background: #FFFFFF;
+  background: #ffb236;
   z-index: 3;
   border-radius: 55px;
   color: #121212;
   padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
+  margin-bottom: 0px;
+  margin: 0 10px 0 10px !important;
 }
 .newsletter-bx h3 {
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
   line-height: 1.2em;
+  color:#fff !important;
 }
 .new-email-bx {
   background: #fff;
@@ -1419,7 +1424,7 @@ p {
 }
 .new-email-bx::before {
   content: "";
-  background: #FFB236;
+  background: #FFB236 ;
   border-radius: 20px;
   position: absolute;
   z-index: -1;

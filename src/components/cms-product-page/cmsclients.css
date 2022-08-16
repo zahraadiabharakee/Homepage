@@ -1,0 +1,38 @@
+.section-tabs {
+    margin-left: 400px !important;
+    margin-top: -450px !important;
+}
+.image{
+    width:30% !important;
+    height:100px !important;
+    
+}
+.nav-pills {
+    margin-left: 500px !important;
+}
+#slideInUp {
+margin-left:-350px !important;
+margin-top: -300px !important;
+padding:0 160px !important;
+}
+.images {
+    height:200px !important;
+    width:30% !important;
+    margin-top: -200px !important;
+}
+.container {
+    padding:30px !important;
+}
+.nav-link#projects-tabs-tab-first{
+    
+    padding:20px ;
+
+}
+.nav-link#projects-tabs-tab-second{
+    
+    padding:20px ;
+}
+.nav-link#projects-tabs-tab-third{
+  
+    padding:20px ;
+}

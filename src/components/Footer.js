@@ -26,7 +26,7 @@ export const Footer = (props) =>  {
           <div className='footer-link-items'>
           <h2>{props.page.Section_3_title}</h2>
             <a to='/'>{props.page.Section_3_paragraph_1}</a>
-            <a to='/'>{props.page.Section_3_paragraph_2}</a>
+            <a to='/'><i className="fab fa-github" />{props.page.Section_3_paragraph_2}</a>
             <a to='/'>{props.page.Section_3_paragraph_3}</a>
             <a to='/'>{props.page.Section_3_paragraph_4}</a>
           </div>
