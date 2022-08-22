@@ -26,6 +26,7 @@ import {FeatureProducts} from "./components/productsPage/FeatureProducts";
 import {Ad} from "./components/productsPage/Ad";
 import Intro from "./components/Intro/Intro";
 import Testimonials from "./components/Testimonials/Testimonial";
+import Services from "./components/Services/Services";
 // import Services from "./components/Services/Services"
 // import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
 // import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;
@@ -72,8 +73,10 @@ function App() {
       <Cms page={homePage.cms} />
       <FeatureProducts page={homePage.features} />
       <Projects page={homePage.projects}/>
+      
       <Contact page={homePage.contactbox} />
       <Footer page={homePage.Footer}/>
+     
       {/* <Ad page={homePage.cards} /> */}
       
 
@@ -105,3 +108,4 @@ function App() {
 }
 
 export default App;
+

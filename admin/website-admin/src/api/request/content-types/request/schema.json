@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "singularName": "request",
+    "pluralName": "requests",
+    "displayName": "request"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "number": {
+      "type": "biginteger"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}
