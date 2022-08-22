@@ -80,8 +80,8 @@ export const Banner = (props) => {
           </Col>
           
         </Row>
-        <a><span className="tagline" id="x" href={props.page.linkAdmin} >{props.page.admin}</span></a>
-        <a><span className="tagline" id="y" href={props.page.linkFront}>{props.page.front}</span></a>
+        <a href={"https://as-mangopulse-admin.azurewebsites.net/Account/logon?ReturnUrl=%2F"} target="_blank"><span className="tagline" id="x" >{props.page.admin}</span></a>
+        <a href={"https://as-mangopulse-front.azurewebsites.net/"} target="_blank"><span className="tagline" id="y" >{props.page.front}</span></a>
       </Container>
 
     </section>

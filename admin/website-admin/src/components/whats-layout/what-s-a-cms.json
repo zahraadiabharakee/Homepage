@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_whats_layout_what_s_a_cms",
+  "info": {
+    "displayName": "what's_a_cms"
+  },
+  "options": {},
+  "attributes": {
+    "whats_cms_title": {
+      "type": "string"
+    },
+    "whats_cms_description": {
+      "type": "string"
+    },
+    "whats_cms_title2": {
+      "type": "string"
+    },
+    "whats_cms_description2": {
+      "type": "string"
+    },
+    "whats_cms_image1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "whats_cms_image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "whats_cms_button_1_label": {
+      "type": "string"
+    },
+    "whats_cms_button_2_label": {
+      "type": "string"
+    },
+    "whats_cms_button_1_link": {
+      "type": "string"
+    },
+    "whats_cms_button_2_link": {
+      "type": "string"
+    },
+    "whats_cms_button_3_label": {
+      "type": "string"
+    },
+    "whats_cms_button_3_link": {
+      "type": "string"
+    },
+    "whats_cms_button_4_label": {
+      "type": "string"
+    },
+    "whats_cms_button_4_link": {
+      "type": "string"
+    }
+  }
+}

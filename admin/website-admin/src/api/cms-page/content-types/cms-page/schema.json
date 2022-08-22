@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "cms_pages",
+  "info": {
+    "singularName": "cms-page",
+    "pluralName": "cms-pages",
+    "displayName": "CmsPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cmsPage_banner": {
+      "displayName": "Cms-Banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-layout.cms-banner"
+    },
+    "cmsDemo": {
+      "displayName": "cmsDemo",
+      "type": "component",
+      "repeatable": false,
+      "component": "demo-layout.cms-demo"
+    },
+    "cmsExperience": {
+      "displayName": "cmsExperience",
+      "type": "component",
+      "repeatable": false,
+      "component": "cms-experience-layout.cms-experience"
+    },
+    "cmsIntegrate": {
+      "displayName": "Cms_integrate",
+      "type": "component",
+      "repeatable": false,
+      "component": "integrate-layout.cms-integrate"
+    },
+    "cms_world": {
+      "displayName": "world",
+      "type": "component",
+      "repeatable": false,
+      "component": "world-layout.world"
+    },
+    "whats_a_cms": {
+      "displayName": "what's_a_cms",
+      "type": "component",
+      "repeatable": false,
+      "component": "whats-layout.what-s-a-cms"
+    }
+  }
+}

@@ -10,35 +10,35 @@
     font-weight: 500;
   }
   
-  .about__content {
+  .contact__content {
     
     padding-left: 50px;
     padding-bottom: 10px;
   }
   
-  .about__img img {
+  .contact__img img {
     border-radius: 40px !important;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
   
   }
-  .about__img {
+  .contact__img {
     padding-bottom: 40px !important;
   }
   
-  .about__content h2 {
+  .contact__content h2 {
     margin-top: 50px !important;
     font-weight: 600;
     text-align: center !important;
   }
-  .about__content h4{
+  .contact__content h4{
     color: #ffb236 !important;
     font-size:15px;
     letter-spacing: 2px;
   }
-  .about__content h4:hover{
+  .contact__content h4:hover{
     transform: scale(1.01);
   }
-  .about__content h2:after{
+  .contact__content h2:after{
     display:block;
     height:10px;
     background-color: #ffb236;
@@ -52,12 +52,12 @@
   }
   @media screen and (max-width:992px)
   {
-    .about__content {
+    .contact__content {
       margin-left: -40px !important;
       padding: 0 0 0 70px !important ;
       
     }
-    .about__img  {
+    .contact__img  {
       margin-top: 100px !important;
       margin-left: 0px !important;
       width:350px !important;
@@ -66,21 +66,21 @@
   }
   @media screen and (max-width:768px)
   {
-    .about__content {
+    .contact__content {
       margin-left: -100px !important;
       padding: 30px !important;
     }
-    .about__img {
+    .contact__img {
       margin-left: 0px !important;
        
     }
-    .about__content p {
+    .contact__content p {
       margin-left: 100px !important;
     }
-    .about__content h4{
+    .contact__content h4{
       margin-left: 100px !important;
     }
-    .about__img img {
+    .contact__img img {
       width:500px !important;   
     }
     .play__icon {
@@ -88,10 +88,10 @@
     }
   }
   @media screen and (max-width:575px){
-    .about__img img {
+    .contact__img img {
       margin-left: -20px !important;
     }
-    .about__content h2{
+    .contact__content h2{
       margin-left: 100px !important;
     }
   }

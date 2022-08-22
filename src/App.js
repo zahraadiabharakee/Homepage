@@ -13,6 +13,7 @@ import { MailchimpForm } from "./components/MailchimpForm" ;
 import {Chooseus} from "./components/Chooseus/ChooseUs";
 import {Aboutus} from "./components/Aboutus/AboutUs";
 import {Cms} from "./components/cms/Cms";
+import {Try} from "./components/Try";
 import {Demo} from "./components/demo/Demo";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -26,11 +27,11 @@ import {FeatureProducts} from "./components/productsPage/FeatureProducts";
 import {Ad} from "./components/productsPage/Ad";
 import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
 import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;
-import {CmsClients} from "./components/cms-product-page/CmsClients" ;
 import {CmsExperience} from "./components/cms-product-page/CmsExperience" ;
 import {CmsIntegrate} from "./components/cms-product-page/CmsIntegrate";
 import {CmsDemo} from "./components/cms-product-page/CmsDemo";
 import {CmsResources} from "./components/cms-product-page/CmsResources";
+import ProductsPage from "./components/cms-product-page/ProductsPage";
 function App() {
 
   const [error, setError] = useState(null);
@@ -69,7 +70,7 @@ function App() {
       <Projects page={homePage.projects}/>
       <Contact page={homePage.contactbox} />
       <Footer page={homePage.Footer}/>
-
+{/*       
       <StuffTwo page={homePage.cards}/>
       <Stuff page={homePage.cards}/>
       <StuffTwo page={homePage.cards}/>
@@ -82,13 +83,12 @@ function App() {
       <CmsBanner page={homePage.cards}/>
       <CmsProducts page={homePage.products} />
       <CmsExperience page={homePage.cards}/>
-      <CmsClients page={homePage.projects} />
-      <CmsResources page={homePage.cards} />
       <CmsIntegrate page={homePage.features}/>
       <Ad page={homePage.cards} />
       <CmsDemo page={homePage.products} />
       <MailchimpForm />
-      <Footer page={homePage.Footer}/>
+      <Footer page={homePage.Footer}/> */}
+      
     </div>
   );
 }

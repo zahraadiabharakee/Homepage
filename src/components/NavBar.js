@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import {constants} from '../Const';
+
 export const NavBar = (props) => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -46,26 +47,27 @@ export const NavBar = (props) => {
             </li>
             <li className='nav-item'>
               <a
-                to='/services'
+                href= "./components/demo/Demo"
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+               products
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a
+                href="./components/Aboutus/AboutUs"
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 {props.page.Tab1}
               </a>
             </li>
-            <li className='nav-item'>
-              <a
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                {props.page.Tab2}
-              </a>
-            </li>
-
+          
+           
             <li>
               <a
-                to='/sign-up'
+                href={"../components/MailchimpForm"}
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
@@ -73,7 +75,7 @@ export const NavBar = (props) => {
               </a>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>Contact Us</Button>}
         </div>
       </nav>
     </>

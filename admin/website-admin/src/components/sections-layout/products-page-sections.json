@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_sections_layout_products_page_sections",
+  "info": {
+    "displayName": "productsPage_sections"
+  },
+  "options": {},
+  "attributes": {
+    "productsPage_section1_title": {
+      "type": "string"
+    },
+    "productsPage_section1_description": {
+      "type": "string"
+    },
+    "productsPage_section1_button_link": {
+      "type": "string"
+    },
+    "productsPage_section1_button_label": {
+      "type": "string"
+    },
+    "productsPage_section2_title": {
+      "type": "string"
+    },
+    "productsPage_section2_description": {
+      "type": "string"
+    },
+    "productsPage_section2_button_link": {
+      "type": "string"
+    },
+    "productsPage_section2_button_label": {
+      "type": "string"
+    },
+    "productsPage_section3_title": {
+      "type": "string"
+    },
+    "productsPage_section3_description": {
+      "type": "string"
+    },
+    "productsPage_section3_button_link": {
+      "type": "string"
+    },
+    "productsPage_section3_button_label": {
+      "type": "string"
+    }
+  }
+}

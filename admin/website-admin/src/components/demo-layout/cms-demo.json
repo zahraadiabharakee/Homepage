@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_demo_layout_cms_demos",
+  "info": {
+    "displayName": "cmsDemo"
+  },
+  "options": {},
+  "attributes": {
+    "cmsDemo_title_1": {
+      "type": "string"
+    },
+    "cmsDemo_description_1": {
+      "type": "text"
+    },
+    "cmsDemo_title_2": {
+      "type": "string"
+    },
+    "cmsDemo_description_2": {
+      "type": "string"
+    },
+    "cmsDemo_image_1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cmsDemo_image_2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

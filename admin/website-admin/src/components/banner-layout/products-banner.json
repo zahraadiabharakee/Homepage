@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_banner_layout_products_banners",
+  "info": {
+    "displayName": "products-banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "banner_title": {
+      "type": "string"
+    },
+    "banner_description": {
+      "type": "string"
+    },
+    "banner_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "banner_products_button_link": {
+      "type": "string"
+    },
+    "banner_products_button_label": {
+      "type": "string"
+    }
+  }
+}

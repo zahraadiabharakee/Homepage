@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_banner_layout_cms_banners",
+  "info": {
+    "displayName": "Cms-Banner"
+  },
+  "options": {},
+  "attributes": {
+    "cmsBanner_title": {
+      "type": "string"
+    },
+    "cmsBanner_Description": {
+      "type": "string"
+    },
+    "cmsBanner_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cmsBanner_button_link": {
+      "type": "string"
+    },
+    "cmsBanner_button_label": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_website_layout_products_page_websites",
+  "info": {
+    "displayName": "Products_page_website"
+  },
+  "options": {},
+  "attributes": {
+    "productsPage_website_title": {
+      "type": "string"
+    },
+    "productsPage_website_description": {
+      "type": "string"
+    },
+    "productsPage_website_button_label": {
+      "type": "string"
+    },
+    "productsPage_website_button_link": {
+      "type": "string"
+    },
+    "productsPage_website_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

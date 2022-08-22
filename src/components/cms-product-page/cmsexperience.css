@@ -21,6 +21,8 @@
   }
   .CmsExperience__img {
     padding-bottom: 40px !important;
+    border-top-right-radius : 0 !important;
+    margin-top: 100px !important;
   }
   
   .CmsExperience__content h2 {

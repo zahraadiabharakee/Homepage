@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_world_layout_worlds",
+  "info": {
+    "displayName": "world"
+  },
+  "options": {},
+  "attributes": {
+    "world_cms_section_1_title": {
+      "type": "string"
+    },
+    "world_cms_section_1_statistics": {
+      "type": "string"
+    },
+    "world_cms_section_2_title": {
+      "type": "string"
+    },
+    "world_cms_section_2_statistics": {
+      "type": "string"
+    },
+    "world_cms_section_3_title": {
+      "type": "string"
+    },
+    "world_cms_section_3_statistics": {
+      "type": "string"
+    },
+    "world_cms_section_4_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -10,23 +10,23 @@
     font-weight: 500;
   }
   
-  .products__content {
+  .cms-demo__content {
     
     padding-left: 50px;
     padding-bottom: 10px;
   }
   
-  .products__img img {
+  .cms-demo__img img {
     border-radius: 40px !important;
-    width:80%  !;
-    margin-top: -40px  !important ;
+    width:80%  ;
+    
   }
   button {
     border-radius: 5px ;
     margin:5px !important;
   } 
 
-  .products__content h3 {
+  .cms-demo__content h3 {
     text-align: left !important;
     margin-top: 50px !important;
     font-weight: 600;
@@ -39,15 +39,15 @@
     color:#ffb236 !important ; 
     padding: 0 10px  0 0  !important ;
   }
-  .products__content p {
+  .cms-demo__content p {
     color : grey !important ;
   }
-  .products__content h4{
+  .cms-demo__content h4{
     color: #ffb236 !important;
     font-size:15px;
     letter-spacing: 2px;
   }
-  .products__content h4:hover{
+  .cms-demo__content h4:hover{
     transform: scale(1.01);
   }
   

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_internships_layout_products_page_internships",
+  "info": {
+    "displayName": "productsPage_internships"
+  },
+  "options": {},
+  "attributes": {
+    "productsPage_internships_title": {
+      "type": "string"
+    },
+    "productsPage_internships_description": {
+      "type": "string"
+    },
+    "productsPage_internships_button_label": {
+      "type": "string"
+    },
+    "productsPage_internships_button_link": {
+      "type": "string"
+    },
+    "productsPage_internships_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

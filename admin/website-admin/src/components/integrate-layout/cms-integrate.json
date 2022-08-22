@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_integrate_layout_cms_integrates",
+  "info": {
+    "displayName": "Cms_integrate"
+  },
+  "options": {},
+  "attributes": {
+    "cmsIntegrate_title": {
+      "type": "string"
+    },
+    "cmsIntegrate_description": {
+      "type": "string"
+    },
+    "cmsIntegrate_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

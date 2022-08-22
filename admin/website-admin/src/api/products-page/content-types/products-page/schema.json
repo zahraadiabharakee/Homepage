@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "products_pages",
+  "info": {
+    "singularName": "products-page",
+    "pluralName": "products-pages",
+    "displayName": "productsPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Products_Banner": {
+      "displayName": "products-banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-layout.products-banner"
+    },
+    "Products_page_cms": {
+      "displayName": "products_cms_component",
+      "type": "component",
+      "repeatable": false,
+      "component": "products-layout.products-cms-component"
+    },
+    "Products_page_layout": {
+      "displayName": "Products_page_website",
+      "type": "component",
+      "repeatable": false,
+      "component": "website-layout.products-page-website"
+    },
+    "productsPage_internships": {
+      "displayName": "productsPage_internships",
+      "type": "component",
+      "repeatable": false,
+      "component": "internships-layout.products-page-internships"
+    },
+    "productsPage_sections": {
+      "displayName": "productsPage_sections",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections-layout.products-page-sections"
+    }
+  }
+}

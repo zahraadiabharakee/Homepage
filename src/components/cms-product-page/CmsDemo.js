@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Row, Col } from "reactstrap";
-import productsImg from "../../assets/img/cloud_1-1.png";
+import cmsdemoImg from "../../assets/img/cloud_1-1.png";
 import CountUp from "react-countup";
 import "./cmsdemo.css";
 import Image from "../../assets/img/illustration.png";
@@ -14,13 +14,13 @@ export const CmsDemo = (props) =>  {
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <div className="products__img">
+            <div className="cms-demo__img">
               <img src={Image} alt="" className="w-100" />
             </div>
           </Col>
 
           <Col lg="6" md="6">
-            <div className="products__content">
+            <div className="cms-demo__content">
               <h3>{props.page.product_1_title}</h3>
               <p> <i className="fa fa-check-square"></i> {props.page.product_1_p1}</p>
               <p><i className="fa fa-check-square"></i> {props.page.product_1_p2}</p>
@@ -37,7 +37,7 @@ export const CmsDemo = (props) =>  {
       <Container>
         <Row>
         <Col lg="6" md="6">
-            <div className="products__content">
+            <div className="cms-demo__content">
         
               <h3>{props.page.product_2_title}</h3>
               <p> <i className="fa fa-check-square"></i> {props.page.product_2_p1}</p>
@@ -52,8 +52,8 @@ export const CmsDemo = (props) =>  {
           </Col>
 
           <Col lg="6" md="6">
-          <div className="products__img">
-              <img src={productsImg} alt="" className="w-100" />
+          <div className="cms-demo__img">
+              <img src={cmsdemoImg} alt="" className="w-100" />
             </div>
           </Col>
         </Row>

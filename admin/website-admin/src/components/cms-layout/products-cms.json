@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_cms_layout_products_cms",
+  "info": {
+    "displayName": "products_cms"
+  },
+  "options": {},
+  "attributes": {
+    "products_cms_title": {
+      "type": "string"
+    },
+    "products_cms_description": {
+      "type": "string"
+    },
+    "products_cms_button_label": {
+      "type": "string"
+    },
+    "products_cms_button_link": {
+      "type": "string"
+    },
+    "products_cms_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
