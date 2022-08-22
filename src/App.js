@@ -13,7 +13,6 @@ import { MailchimpForm } from "./components/MailchimpForm" ;
 import {Chooseus} from "./components/Chooseus/ChooseUs";
 import {Aboutus} from "./components/Aboutus/AboutUs";
 import {Cms} from "./components/cms/Cms";
-import {Try} from "./components/Try";
 import {Demo} from "./components/demo/Demo";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -25,13 +24,16 @@ import {Stuff} from "./components/productsPage/Stuff";
 import {StuffTwo} from "./components/productsPage/StuffTwo";
 import {FeatureProducts} from "./components/productsPage/FeatureProducts";
 import {Ad} from "./components/productsPage/Ad";
-import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
-import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;
-import {CmsExperience} from "./components/cms-product-page/CmsExperience" ;
-import {CmsIntegrate} from "./components/cms-product-page/CmsIntegrate";
-import {CmsDemo} from "./components/cms-product-page/CmsDemo";
-import {CmsResources} from "./components/cms-product-page/CmsResources";
-import ProductsPage from "./components/cms-product-page/ProductsPage";
+import Intro from "./components/Intro/Intro";
+import Testimonials from "./components/Testimonials/Testimonial";
+// import Services from "./components/Services/Services"
+// import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
+// import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;
+// import {CmsExperience} from "./components/cms-product-page/CmsExperience" ;
+// import {CmsIntegrate} from "./components/cms-product-page/CmsIntegrate";
+// import {CmsDemo} from "./components/cms-product-page/CmsDemo";
+// import {CmsResources} from "./components/cms-product-page/CmsResources";
+// import ProductsPage from "./components/cms-product-page/ProductsPage";
 function App() {
 
   const [error, setError] = useState(null);
@@ -57,19 +59,28 @@ function App() {
       <NavBar page={homePage.Navbar}/>
       <Banner page={homePage.BannerLayout} />
       <Skills page={homePage.clients}/>
+      <Intro />
       <Aboutus page={homePage.cards}/>
       <Chooseus page={homePage.cards} />
       <Aboutus page={homePage.cards}/>
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
+      <Testimonials />
       <Article page={homePage.Team}/>
       <Features page={homePage.features} />
       <Team />
-     
       <Cms page={homePage.cms} />
+      <FeatureProducts page={homePage.features} />
       <Projects page={homePage.projects}/>
       <Contact page={homePage.contactbox} />
       <Footer page={homePage.Footer}/>
+      {/* <Ad page={homePage.cards} /> */}
+      
+
+      
+    
+    
+     
 {/*       
       <StuffTwo page={homePage.cards}/>
       <Stuff page={homePage.cards}/>
@@ -84,7 +95,7 @@ function App() {
       <CmsProducts page={homePage.products} />
       <CmsExperience page={homePage.cards}/>
       <CmsIntegrate page={homePage.features}/>
-      <Ad page={homePage.cards} />
+      
       <CmsDemo page={homePage.products} />
       <MailchimpForm />
       <Footer page={homePage.Footer}/> */}

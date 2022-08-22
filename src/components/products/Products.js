@@ -12,7 +12,7 @@ export const Products = (props) =>  {
      gif = constants.link+props.page.products_media.data[0].attributes.url ;
     }
   return (
-    <section>
+    <section id="products">
       <Container>
         <Row>
           <Col lg="6" md="6">

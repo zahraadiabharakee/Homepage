@@ -41,17 +41,17 @@ export const NavBar = (props) => {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <a to='/' className='nav-links' onClick={closeMobileMenu}>
+              <a href="#home" className='nav-links' onClick={closeMobileMenu}>
                 {props.page.Tab3}
               </a>
             </li>
             <li className='nav-item'>
               <a
-                href= "./components/demo/Demo"
+                href= "#products"
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-               products
+               Products
               </a>
             </li>
             <li className='nav-item'>
@@ -75,7 +75,7 @@ export const NavBar = (props) => {
               </a>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contact Us</Button>}
+          <a href="#connect" style={{fontWeight:"700"}}>{button && <Button buttonStyle='btn--outline'>Contact Us</Button>}</a>
         </div>
       </nav>
     </>
