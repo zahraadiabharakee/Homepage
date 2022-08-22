@@ -2,7 +2,7 @@ import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
+import {constants} from "../../Const"
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import profilePic1 from "../../img/quotes.png";
@@ -10,32 +10,36 @@ import profilePic2 from "../../img/quotes.png";
 import profilePic3 from "../../img/quotes.png";
 import profilePic4 from "../../img/quotes.png";
 
-const Testimonial = () => {
+const Testimonial = (props) => {
+  var image ="";
+  if(props.page.quotes_image && props.page.quotes_image.data  && props.page.quotes_image.data.attributes){
+   image= constants.link+props.page.quotes_image.data.attributes.url ;
+  }
   const clients = [
     {
-      img: profilePic1,
+      img: image,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
      
       },
     
     {
-      img: profilePic2,
+      img: image,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: profilePic3,
+      img: image,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: profilePic4,
+      img: image,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
   ];
-
+   if(props.page){
   return (
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
@@ -65,6 +69,7 @@ const Testimonial = () => {
       </Swiper>
     </div>
   );
+      }
 };
 
 export default Testimonial;

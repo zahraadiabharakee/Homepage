@@ -13,15 +13,27 @@ import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
-
+import {constants} from '../../Const';
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-const Intro = () => {
-  // Transition
+ const Intro = (props) => {
+  var image1 ="";
+  if(props.page.Intro_background_image_1  && props.page.Intro_background_image_1 .data  && props.page.Intro_background_image_1 .data.attributes){
+   image1 = constants.link+props.page.Intro_background_image_1 .data.attributes.url ;
+  }
+   var image2 ="";
+   if(props.page.Intro_background_image_3 && props.page.Intro_background_image_3.data  && props.page.Intro_background_image_3.data.attributes){
+    image2 = constants.link+props.page.Intro_background_image_3.data.attributes.url ;
+   }
+    var image3 ="";
+    if(props.page.Intro_background_image_2 && props.page.Intro_background_image_2.data  && props.page.Intro_background_image_2.data.attributes){
+     image3 = constants.link+props.page.Intro_background_image_2.data.attributes.url ;
+    }// Transition
   const transition = { duration: 2, type: "spring" };
 
   // context
-
+  
+ if(props.page){
   return (
     <div className="Intro" id="Intro">
       {/* left name side */}
@@ -29,8 +41,8 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <div className="intro__content">
-          <Heading subtitle="friendly when you need it" title="Built for user-centric companies like yours" />
-              <h4>get what you need <i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+          <Heading subtitle={props.page.Intro_title} title={props.page.Intro_description} />
+              <h4>{props.page.Intro_directory} <i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
             </div>
       
         </div>
@@ -45,15 +57,15 @@ const Intro = () => {
       {/* right image side */}
       <div className="i-right">
         
-        <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={image1} alt="" />
+        <img src={image2} alt="" />
         {/* animation */}
         <motion.img
           initial={{ left: "-30%" }}
           whileInView={{ left: "-10%" }}
           className="Crown"
           transition={transition}
-          src={cursor}
+          src={image3}
           alt=""
         />
 
@@ -82,6 +94,8 @@ const Intro = () => {
       </div>
     </div>
   );
+        }
 };
+
 
 export default Intro;

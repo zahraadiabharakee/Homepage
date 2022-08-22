@@ -25,6 +25,9 @@
     },
     "Tab3": {
       "type": "string"
+    },
+    "navbar_button_label": {
+      "type": "string"
     }
   }
 }

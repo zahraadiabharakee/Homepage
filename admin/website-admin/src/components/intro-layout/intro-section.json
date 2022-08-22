@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_intro_layout_intro_sections",
+  "info": {
+    "displayName": "Intro_section"
+  },
+  "options": {},
+  "attributes": {
+    "Intro_title": {
+      "type": "string"
+    },
+    "Intro_description": {
+      "type": "string"
+    },
+    "Intro_directory": {
+      "type": "string"
+    },
+    "Intro_background_image_1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Intro_background_image_3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Intro_background_image_2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

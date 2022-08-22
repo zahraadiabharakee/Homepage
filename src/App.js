@@ -60,18 +60,18 @@ function App() {
       <NavBar page={homePage.Navbar}/>
       <Banner page={homePage.BannerLayout} />
       <Skills page={homePage.clients}/>
-      <Intro />
+       {/* <Intro page={homePage.Intro}/>   */}
       <Aboutus page={homePage.cards}/>
       <Chooseus page={homePage.cards} />
       <Aboutus page={homePage.cards}/>
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
-      <Testimonials />
+      {/* <Testimonials page={homePage.quotes}/> */}
       <Article page={homePage.Team}/>
       <Features page={homePage.features} />
       <Team />
       <Cms page={homePage.cms} />
-      <FeatureProducts page={homePage.features} />
+      {/* <FeatureProducts page={homePage.features} /> */}
       <Projects page={homePage.projects}/>
       
       <Contact page={homePage.contactbox} />

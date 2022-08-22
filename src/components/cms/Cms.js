@@ -12,9 +12,25 @@ import { Container, Row, Col } from "reactstrap";
 import {constants} from "../../Const"
 export const Cms = (props) =>  {
   if(props.page){
-    var image ="";
-    if(props.page.cms_image && props.page.cms_image.data && props.page.cms_image.data.attributes){
-     image = constants.link+props.page.cms_image.data.attributes.url ;
+    var image1 ="";
+    if(props.page.cms_image_1 && props.page.cms_image_1.data && props.page.cms_image_1.data.attributes){
+     image1 = constants.link+props.page.cms_image_1.data.attributes.url ;
+    }
+    var image2 ="";
+    if(props.page.cms_image_2 && props.page.cms_image_2.data && props.page.cms_image_2.data.attributes){
+     image2 = constants.link+props.page.cms_image_2.data.attributes.url ;
+    }
+    var image3 ="";
+    if(props.page.cms_image_3 && props.page.cms_image_3.data && props.page.cms_image_3.data.attributes){
+     image3 = constants.link+props.page.cms_image_3.data.attributes.url ;
+    }
+    var image4 ="";
+    if(props.page.cms_image_4 && props.page.cms_image_4.data && props.page.cms_image_4.data.attributes){
+     image4 = constants.link+props.page.cms_image_4.data.attributes.url ;
+    }
+    var image5 ="";
+    if(props.page.cms_image_5 && props.page.cms_image_5.data && props.page.cms_image_5.data.attributes){
+     image5 = constants.link+props.page.cms_image_5.data.attributes.url ;
     }
   return (
 
@@ -46,19 +62,19 @@ export const Cms = (props) =>  {
         className="w-mainCircle"
       >
         <div className="w-secCircle">
-          <img src={Upwork} alt="" />
+          <img src={image1} alt="" />
         </div>
         <div className="w-secCircle">
-          <img src={Fiverr} alt="" />
+          <img src={image2} alt="" />
         </div>
         <div className="w-secCircle">
-          <img src={Amazon} alt="" />
+          <img src={image3} alt="" />
         </div>{" "}
         <div className="w-secCircle">
-          <img src={Shopify} alt="" />
+          <img src={image4} alt="" />
         </div>
         <div className="w-secCircle">
-          <img src={Facebook} alt="" />
+          <img src={image5} alt="" />
         </div>
       </motion.div>
       {/* background Circles */}

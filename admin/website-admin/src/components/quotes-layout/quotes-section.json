@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_quotes_layout_quotes_sections",
+  "info": {
+    "displayName": "quotes_section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "quotes_title_span1": {
+      "type": "string"
+    },
+    "quotes_description": {
+      "type": "string"
+    },
+    "quotes_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "quotes_1": {
+      "type": "text"
+    },
+    "quotes_2": {
+      "type": "text"
+    },
+    "quotes_3": {
+      "type": "text"
+    },
+    "quotes_4": {
+      "type": "string"
+    },
+    "quotes_title_span2": {
+      "type": "string"
+    },
+    "quotes_title_span3": {
+      "type": "string"
+    }
+  }
+}

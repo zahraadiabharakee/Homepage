@@ -42,7 +42,7 @@ export const NavBar = (props) => {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <a href="#home" className='nav-links' onClick={closeMobileMenu}>
-                {props.page.Tab3}
+                {props.page.Tab1}
               </a>
             </li>
             <li className='nav-item'>
@@ -51,7 +51,7 @@ export const NavBar = (props) => {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-               Products
+              {props.page.Tab2}
               </a>
             </li>
             <li className='nav-item'>
@@ -60,7 +60,7 @@ export const NavBar = (props) => {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                {props.page.Tab1}
+                {props.page.Tab3}
               </a>
             </li>
           
@@ -71,7 +71,7 @@ export const NavBar = (props) => {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-              Sign Up
+             {props.page.navbar_button_label}
               </a>
             </li>
           </ul>

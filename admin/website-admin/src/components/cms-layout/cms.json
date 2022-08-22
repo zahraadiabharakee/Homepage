@@ -1,7 +1,8 @@
 {
   "collectionName": "components_cms_layout_cms",
   "info": {
-    "displayName": "cms"
+    "displayName": "cms",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -21,15 +22,55 @@
       "type": "string",
       "required": true
     },
-    "cms_image": {
+    "cms_image_1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
+      ]
+    },
+    "cms_image_2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
       ],
       "type": "media",
-      "multiple": false,
-      "required": true
+      "multiple": false
+    },
+    "cms_image_3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cms_image_4": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cms_image_5": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

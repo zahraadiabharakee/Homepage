@@ -84,6 +84,24 @@
       "type": "component",
       "repeatable": false,
       "component": "team-layout.team"
+    },
+    "Intro": {
+      "displayName": "Intro_section",
+      "type": "component",
+      "repeatable": false,
+      "component": "intro-layout.intro-section"
+    },
+    "quotes": {
+      "displayName": "quotes_section",
+      "type": "component",
+      "repeatable": false,
+      "component": "quotes-layout.quotes-section"
+    },
+    "blog": {
+      "displayName": "Blog",
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-layout.blog"
     }
   }
 }

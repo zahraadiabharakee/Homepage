@@ -23,11 +23,6 @@
       "type": "text",
       "required": true
     },
-    "submitbutton": {
-      "type": "component",
-      "repeatable": true,
-      "component": "buttonlayout.buttons"
-    },
     "image": {
       "type": "media",
       "multiple": true,
