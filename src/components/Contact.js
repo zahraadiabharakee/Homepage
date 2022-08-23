@@ -1,24 +1,26 @@
 import React, { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap";
-import {constants} from "../Const"
+import {constants} from "../Const";
+import axios from "axios";
 export const Contact = (props) => {
-  const [state, setState] = useState({
-    fname:"",
-    lname:"",
-    email:"",
-    number:"",
-    message:"",
+const [error, setError] = useState(null);
+const [modifiedData, setModifiedData] = useState({ firstName: '', lastName: '', number: '',email:'', message:'' });
 
-  });
- 
-  const handleChange = e => {
-    setState({
-      ...state,
-      [e.target.name]: e.target.value,
+const handleInputChange = useCallback(({ target: { name, value } }) => {
+  setModifiedData((prevData) => ({ ...prevData, [name]: value }));
+}, []);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  await axios
+    .post("http://localhost:1337/api/messages", modifiedData)
+    .then((response) => {
+      console.log(response);
     })
-  }
-
-
+    .catch((error) => {
+      setError(error);
+    });
+};
   if(props.page){
    var image ="";
    if(props.page.image && props.page.image.data && props.page.image.data.length>0){
@@ -33,22 +35,52 @@ export const Contact = (props) => {
           </Col>
           <Col size={12} md={6}>
                 <h2>{props.page.Title}</h2>
-                <form >
+                <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text"  placeholder={props.page.nameinput} />
+                      <input
+                      type="text"  
+                      name="firstName"
+                      placeholder={props.page.nameinput} 
+                      onChange={handleInputChange}
+                      value={modifiedData.firstName}
+                      />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text"   placeholder={props.page.lastnameinput} />
+                      <input
+                      type="text" 
+                      name="lastName"
+                      placeholder={props.page.lastnameinput} 
+                      onChange={handleInputChange}
+                      value={modifiedData.lastName}
+                      />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email"  placeholder={props.page.Email} />
+                      <input 
+                      type="email" 
+                      name="email"
+                      placeholder={props.page.Email} 
+                      onChange={handleInputChange}
+                      value={modifiedData.email}
+                      />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel"  placeholder={props.page.number} />
+                      <input   
+                      type="tel"
+                      name="email"
+                      placeholder={props.page.number} 
+                      onChange={handleInputChange}
+                      value={modifiedData.number}
+                      />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" value={state.message} onChange={handleChange} placeholder={props.page.messageinput} ></textarea>
+                      <textarea rows="6" 
+                      name="email"
+                      placeholder={props.page.messageinput} 
+                      onChange={handleInputChange}
+                      value={modifiedData.message}
+                      >
+                      </textarea>
                       <button id="send" type="submit"><span>Submit</span></button>
                     </Col>
                   </Row>
@@ -65,3 +97,11 @@ export const Contact = (props) => {
   
   }
 }
+
+
+
+
+
+  
+      
+

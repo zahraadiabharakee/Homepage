@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
@@ -8,25 +8,25 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { Cards } from "./components/Cards" ;
-import { MailchimpForm } from "./components/MailchimpForm" ;
+// import { Cards } from "./components/Cards" ;
+// import { MailchimpForm } from "./components/MailchimpForm" ;
 import {Chooseus} from "./components/Chooseus/ChooseUs";
 import {Aboutus} from "./components/Aboutus/AboutUs";
 import {Cms} from "./components/cms/Cms";
 import {Demo} from "./components/demo/Demo";
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {Features} from "./components/AllFeatures/Features"
 import {Article} from "./components/articles/Article";
 import {Products } from "./components/products/Products";
 import Team from "./components/team/Team";
-import {Stuff} from "./components/productsPage/Stuff";
-import {StuffTwo} from "./components/productsPage/StuffTwo";
-import {FeatureProducts} from "./components/productsPage/FeatureProducts";
-import {Ad} from "./components/productsPage/Ad";
+// import {Stuff} from "./components/productsPage/Stuff";
+// import {StuffTwo} from "./components/productsPage/StuffTwo";
+// import {FeatureProducts} from "./components/productsPage/FeatureProducts";
+// import {Ad} from "./components/productsPage/Ad";
 import {Intro} from "./components/Intro/Intro";
 import Testimonials from "./components/Testimonials/Testimonial";
-import Services from "./components/Services/Services";
+// import Services from "./components/Services/Services";
 // import Services from "./components/Services/Services"
 // import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
 // import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;
@@ -46,10 +46,6 @@ function App() {
       .then(({ data }) => setHomePage(data.data.attributes))
       .catch((error) => setError(error))
   }, [])
-  
-
-  
-
   if (error) {
     // Print errors if any
     return <div>An error occured: {error.message}</div>;
@@ -108,3 +104,99 @@ function App() {
 
 export default App;
 
+
+
+
+// const Checkbox = ({ category, isChecked, onAddCategory, onRemoveCategory }) => (
+//   <div key={category.id}>
+//     <label htmlFor={category.id}>{category.name}</label>
+//     <input
+//       type="checkbox"
+//       checked={isChecked}
+//       onChange={isChecked ? onAddCategory : onRemoveCategory}
+//       name="categories"
+//       id={category.id}
+//     />
+//   </div>
+// );
+
+const App = () => {
+  const [allCategories, setAllCategories] = useState([]);
+  const [error, setError] = useState(null);
+  const [modifiedData, setModifiedData] = useState({ categories: [], description: '', name: '' });
+
+  const handleInputChange = useCallback(({ target: { name, value } }) => {
+    setModifiedData((prevData) => ({ ...prevData, [name]: value }));
+  }, []);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    await axios
+      .post("http://localhost:1337/api/messages", modifiedData)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        setError(error);
+      });
+  };
+
+ 
+ 
+  return (
+    <div className="App">
+      <form onSubmit={handleSubmit}>
+        <label>
+          firstName:
+          <input
+            type="text"
+            name="firstName"
+            onChange={handleInputChange}
+            value={modifiedData.name}
+          />
+        </label>
+        <label>
+          lastName:
+          <input
+            type="text"
+            name="lastName"
+            onChange={handleInputChange}
+            value={modifiedData.description}
+          />
+        </label>
+        <label>
+          email:
+          <input
+            type="text"
+            name="email"
+            onChange={handleInputChange}
+            value={modifiedData.description}
+          />
+        </label>
+        <label>
+          number:
+          <input
+            type="text"
+            name="email"
+            onChange={handleInputChange}
+            value={modifiedData.description}
+          />
+        </label>
+        <label>
+          message:
+          <input
+            type="text"
+            name="email"
+            onChange={handleInputChange}
+            value={modifiedData.description}
+          />
+        </label>
+        <div>
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+ 
