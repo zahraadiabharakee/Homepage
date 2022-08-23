@@ -46,10 +46,6 @@ const Testimonial = (props) => {
         <span>{props.page.quotes_title_span1}</span>
         <span>{props.page.quotes_title_span2}</span>
         <span>{props.page.quotes_title_span3}</span>
-        <p>{props.page.quotes_description}</p>
-
-  
-
       </div>
       <Swiper
         // install Swiper modules

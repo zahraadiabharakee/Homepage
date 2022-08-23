@@ -1,9 +1,6 @@
 import React, { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/marketing.svg";
 import {constants} from "../Const"
-import TrackVisibility from 'react-on-screen';
-import axios from 'axios';
 export const Contact = (props) => {
   const [state, setState] = useState({
     fname:"",
@@ -14,29 +11,12 @@ export const Contact = (props) => {
 
   });
  
-  // await axios
-  //     .post("http://localhost:1337/api/requests", modifiedData)
-  //     .then((response) => {
-  //       console.log(response);
-  //     })
-  //     .catch((error) => {
-  //       setError(error);
-  //     });
-  // };
   const handleChange = e => {
     setState({
       ...state,
       [e.target.name]: e.target.value,
     })
   }
-  const handleSubmit = event => {
-    event.preventDefault();
-    alert(`Your state values: \n 
-            email:  \n 
-            You can replace this alert with your process`);
-  };
-
-
 
 
   if(props.page){
@@ -56,20 +36,20 @@ export const Contact = (props) => {
                 <form >
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={state.fname} onChange={handleChange} placeholder={props.page.nameinput} />
+                      <input type="text"  placeholder={props.page.nameinput} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text"  value={state.lname} onChange={handleChange} placeholder={props.page.lastnameinput} />
+                      <input type="text"   placeholder={props.page.lastnameinput} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={state.email} onChange={handleChange} placeholder={props.page.Email} />
+                      <input type="email"  placeholder={props.page.Email} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel"  value={state.number} onChange={handleChange} placeholder={props.page.number} />
+                      <input type="tel"  placeholder={props.page.number} />
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={state.message} onChange={handleChange} placeholder={props.page.messageinput} ></textarea>
-                      <button id="send" type="submit" onSubmit={handleSubmit}><span>Submit</span></button>
+                      <button id="send" type="submit"><span>Submit</span></button>
                     </Col>
                   </Row>
                 </form>

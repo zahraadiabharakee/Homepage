@@ -8,7 +8,7 @@ import {constants} from "../../Const" ;
 export const Products = (props) =>  {
   if(props.page){
     var gif ="";
-    if(props.page.products_media && props.page.products_media.data && props.page.products_media.data.length>0  && props.page.products_media.data.attributes){
+    if(props.page.products_media && props.page.products_media.data && props.page.products_media.data.length>0){
      gif = constants.link+props.page.products_media.data[0].attributes.url ;
     }
   return (
