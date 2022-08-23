@@ -14,12 +14,13 @@
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 /************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 html {

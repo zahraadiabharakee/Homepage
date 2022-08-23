@@ -4,7 +4,8 @@
   "info": {
     "singularName": "message",
     "pluralName": "messages",
-    "displayName": "Message"
+    "displayName": "Message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,14 +18,14 @@
     "lastName": {
       "type": "string"
     },
-    "number": {
-      "type": "string"
-    },
     "message": {
       "type": "text"
     },
     "email": {
       "type": "email"
+    },
+    "number": {
+      "type": "biginteger"
     }
   }
 }

@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
+import { useCallback, useEffect, useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import {constants} from "../Const";
 import axios from "axios";
@@ -13,7 +14,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   await axios
-    .post("http://localhost:1337/api/messages", modifiedData)
+    .post("http://localhost:1337/api/messages",{data: modifiedData})
     .then((response) => {
       console.log(response);
     })
@@ -21,6 +22,10 @@ const handleSubmit = async (e) => {
       setError(error);
     });
 };
+// const handleSubmit = async (e) => {
+//   e.preventDefault();
+//   await fetch
+// };
   if(props.page){
    var image ="";
    if(props.page.image && props.page.image.data && props.page.image.data.length>0){
@@ -38,7 +43,7 @@ const handleSubmit = async (e) => {
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input
+                      <input required
                       type="text"  
                       name="firstName"
                       placeholder={props.page.nameinput} 
@@ -47,7 +52,7 @@ const handleSubmit = async (e) => {
                       />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input
+                      <input required
                       type="text" 
                       name="lastName"
                       placeholder={props.page.lastnameinput} 
@@ -56,7 +61,7 @@ const handleSubmit = async (e) => {
                       />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input 
+                      <input required
                       type="email" 
                       name="email"
                       placeholder={props.page.Email} 
@@ -65,17 +70,17 @@ const handleSubmit = async (e) => {
                       />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input   
-                      type="tel"
-                      name="email"
+                      <input required
+                      type="text"
+                      name="number"
                       placeholder={props.page.number} 
                       onChange={handleInputChange}
                       value={modifiedData.number}
                       />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" 
-                      name="email"
+                      <textarea rows="6"  
+                      name="message"
                       placeholder={props.page.messageinput} 
                       onChange={handleInputChange}
                       value={modifiedData.message}

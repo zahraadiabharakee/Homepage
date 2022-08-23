@@ -37,7 +37,7 @@ export const Features = (props) =>  {
             <Container>
             <Row className="align-items-center">
               <Heading subtitle={props.page.features_title} title={props.page.features_p} />
-                  <Col size={9} md={3}>
+                  <Col size={9} md={2}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image1} />
@@ -46,7 +46,7 @@ export const Features = (props) =>  {
                     <p>{props.page.feature_1_description}</p>
                   </div>
                   </Col>
-                  <Col size={9} md={3}>
+                  <Col size={9} md={2}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image2} alt='' />
@@ -55,7 +55,7 @@ export const Features = (props) =>  {
                     <p>{props.page.feature_2_description}</p>
                   </div>
                   </Col>
-                  <Col size={9} md={3}>
+                  <Col size={9} md={2}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image3} alt='' /*className='show' */ />
@@ -64,7 +64,7 @@ export const Features = (props) =>  {
                     <p>{props.page.feature_3_description}</p>
                   </div>
                   </Col>
-                  <Col size={9} md={3}>
+                  <Col size={9} md={2}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image4} alt='' />
@@ -73,7 +73,7 @@ export const Features = (props) =>  {
                     <p>{props.page.feature_4_description}</p>
                   </div>
                   </Col>
-                  <Col size={9} md={3}>
+                  <Col size={9} md={2}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image5} alt=''  />
@@ -82,7 +82,7 @@ export const Features = (props) =>  {
                     <p>{props.page.feature_5_description}</p>
                   </div>
                   </Col>
-                  <Col size={9} md={3}>
+                  <Col size={9} md={2}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image6} alt='' />
@@ -91,7 +91,7 @@ export const Features = (props) =>  {
                     <p>{props.page.feature_6_description}</p>
                   </div>
                   </Col>
-                  <Col size={9} md={3}>
+                   {/* <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image6} alt='' />
@@ -99,8 +99,8 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_6_title}</h1>
                     <p>{props.page.feature_6_description}</p>
                   </div>
-                  </Col>
-                  <Col size={9} md={3}>
+                  </Col>  */}
+                  {/* <Col size={9} md={3}>
                   <div className='box'>
                     <div className='img'>
                       <img src={image6} alt='' />
@@ -108,7 +108,7 @@ export const Features = (props) =>  {
                     <h1 className="CourseName">{props.page.feature_6_title}</h1>
                     <p>{props.page.feature_6_description}</p>
                   </div>
-                  </Col>
+                  </Col> */}
                   
               </Row>
             </Container>
