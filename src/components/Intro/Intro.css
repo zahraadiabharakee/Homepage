@@ -9,6 +9,8 @@
   display: flex;
   position: relative;
   flex: 1;
+  text-align: center !important;
+  align-items: center !important;
   flex-direction: column;
   gap: 2rem;
 }
@@ -52,6 +54,7 @@
 .i-right {
   flex: 1;
   position: relative;
+  margin-left: 100px !important;
 }
 
 .i-right .Crown {
@@ -143,9 +146,10 @@
 .intro__content h4{
   color: #ffb236 !important;
   font-size:15px;
-  letter-spacing: 2px;
   text-align: center !important;
   align-items: center !important;
+  letter-spacing: 2px;
+  
   margin-top:-30px ;
 }
 .intro__content h4:hover{

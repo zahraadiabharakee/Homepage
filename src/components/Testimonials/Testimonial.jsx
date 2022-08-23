@@ -11,10 +11,6 @@ import profilePic3 from "../../img/quotes.png";
 import profilePic4 from "../../img/quotes.png";
 
 const Testimonial = (props) => {
-  // var image ="";
-  // if(props.page.quotes_image && props.page.quotes_image.data  && props.page.quotes_image.data.attributes){
-  //  image= constants.link+props.page.quotes_image.data.attributes.url ;
-  // }
   const clients = [
     {
       img: profilePic2,
@@ -40,13 +36,18 @@ const Testimonial = (props) => {
     },
   ];
    if(props.page){
+    var image ="";
+  if(props.page.quotes_image && props.page.quotes_image.data  && props.page.quotes_image.data.attributes){
+   image= constants.link+props.page.quotes_image.data.attributes.url ;
+  }
   return (
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
-        <p>Discover endless solutions and possibilities with our integrated products from different industries - Media, F&B, FMCG, Retail, Manufacturing, Healthcare, Education, Finance services, Real estate.</p>
+        <span>{props.page.quotes_title_span1}</span>
+        <span>{props.page.quotes_title_span2}</span>
+        <span>{props.page.quotes_title_span3}</span>
+        <p>{props.page.quotes_description}</p>
+
   
 
       </div>
