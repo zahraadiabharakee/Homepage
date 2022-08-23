@@ -1,18 +1,6 @@
 import React, { useContext } from "react";
 import "./Intro.css";
 import Heading from "../common/heading/Heading";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.svg";
-import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/point-ico.svg";
-import star from "../../img/star-ico.svg";
-import cursor from "../../img/cursor-ico.svg";
-import crown from "../../img/crown.png";
-import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
 import {constants} from '../../Const';
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -41,11 +29,15 @@ export const Intro = (props) => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <div className="intro__content">
-          <Heading subtitle={props.page.Intro_title} title={props.page.Intro_description} />
+         
+          <div className="about__intro">
+              <h2>{props.page.Intro_title}</h2>
+              <p>
+              {props.page.Intro_description}
+              </p>
               <h4>{props.page.Intro_directory} <i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
             </div>
-      
+           
         </div>
         <Link to="contact" smooth={true} spy={true}>
         

@@ -63,7 +63,6 @@ function App() {
        <Intro page={homePage.Intro}/>  
       <Aboutus page={homePage.cards}/>
       <Chooseus page={homePage.cards} />
-      <Aboutus page={homePage.cards}/>
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
      <Testimonials page={homePage.quotes}/>
