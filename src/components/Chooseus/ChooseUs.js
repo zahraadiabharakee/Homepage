@@ -8,8 +8,8 @@ import {constants} from "../../Const"
 export const Chooseus = (props) =>  {
   if(props.page){
     var image ="";
-    if(props.page.A_cardImage && props.page.A_cardImage.data && props.page.A_cardImage.data.length>0){
-     image = constants.link+props.page.A_cardImage.data[0].attributes.url ;
+    if(props.page.B_cardImage && props.page.B_cardImage.data && props.page.B_cardImage.data.attributes){
+     image = constants.link+props.page.B_cardImage.data.attributes.url ;
     }
   return (
     <section>
