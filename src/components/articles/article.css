@@ -92,3 +92,22 @@
     background-color: #ffb236b9;
     color: #fff;
   }
+  @media screen and (max-width:1200px){
+    .overlay {
+      padding:10px !important;
+    }
+  }
+  @media screen and (max-width:992px){
+    .overlay {
+      height:170px !important;
+      padding:10px !important;
+    
+    }
+    .img img{
+      height:160px !important;
+    }
+    .details h2{
+      font-size: 20px !important;
+    }
+
+  }
