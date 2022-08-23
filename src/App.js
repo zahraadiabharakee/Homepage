@@ -24,7 +24,7 @@ import {Stuff} from "./components/productsPage/Stuff";
 import {StuffTwo} from "./components/productsPage/StuffTwo";
 import {FeatureProducts} from "./components/productsPage/FeatureProducts";
 import {Ad} from "./components/productsPage/Ad";
-import Intro from "./components/Intro/Intro";
+import {Intro} from "./components/Intro/Intro";
 import Testimonials from "./components/Testimonials/Testimonial";
 import Services from "./components/Services/Services";
 // import Services from "./components/Services/Services"
@@ -60,18 +60,18 @@ function App() {
       <NavBar page={homePage.Navbar}/>
       <Banner page={homePage.BannerLayout} />
       <Skills page={homePage.clients}/>
-       {/* <Intro page={homePage.Intro}/>   */}
+       <Intro page={homePage.Intro}/>  
       <Aboutus page={homePage.cards}/>
       <Chooseus page={homePage.cards} />
       <Aboutus page={homePage.cards}/>
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
-      {/* <Testimonials page={homePage.quotes}/> */}
+     <Testimonials page={homePage.quotes}/>
       <Article page={homePage.Team}/>
       <Features page={homePage.features} />
       <Team />
       <Cms page={homePage.cms} />
-      {/* <FeatureProducts page={homePage.features} /> */}
+      {/* <FeatureProducts />  */}
       <Projects page={homePage.projects}/>
       
       <Contact page={homePage.contactbox} />

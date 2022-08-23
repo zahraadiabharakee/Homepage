@@ -16,24 +16,25 @@ import Instagram from "../../img/instagram.png";
 import {constants} from '../../Const';
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
- const Intro = (props) => {
-  var image1 ="";
-  if(props.page.Intro_background_image_1  && props.page.Intro_background_image_1 .data  && props.page.Intro_background_image_1 .data.attributes){
-   image1 = constants.link+props.page.Intro_background_image_1 .data.attributes.url ;
-  }
-   var image2 ="";
-   if(props.page.Intro_background_image_3 && props.page.Intro_background_image_3.data  && props.page.Intro_background_image_3.data.attributes){
-    image2 = constants.link+props.page.Intro_background_image_3.data.attributes.url ;
-   }
-    var image3 ="";
-    if(props.page.Intro_background_image_2 && props.page.Intro_background_image_2.data  && props.page.Intro_background_image_2.data.attributes){
-     image3 = constants.link+props.page.Intro_background_image_2.data.attributes.url ;
-    }// Transition
+export const Intro = (props) => {
+ // Transition
   const transition = { duration: 2, type: "spring" };
 
   // context
   
  if(props.page){
+  var image1 ="";
+  if(props.page.Intro_background_image_1 && props.page.Intro_background_image_1.data  && props.page.Intro_background_image_1.data.length>0){
+   image1 = constants.link+props.page.Intro_background_image_1.data[0].attributes.url ;
+  }
+   var image2 ="";
+   if(props.page.Intro_background_image_2 && props.page.Intro_background_image_2.data  && props.page.Intro_background_image_2.data.attributes){
+    image2 = constants.link+props.page.Intro_background_image_2.data.attributes.url ;
+   }
+    var image3 ="";
+    if(props.page.Intro_background_image_3 && props.page.Intro_background_image_3.data  && props.page.Intro_background_image_3.data.attributes){
+     image3 = constants.link+props.page.Intro_background_image_3.data.attributes.url ;
+    }
   return (
     <div className="Intro" id="Intro">
       {/* left name side */}
@@ -56,16 +57,16 @@ import { Link } from "react-scroll";
       </div>
       {/* right image side */}
       <div className="i-right">
-        
-        <img src={image1} alt="" />
-        <img src={image2} alt="" />
+       
+      <img src={image1} alt="" />
+        <img src={image3} alt="" /> 
         {/* animation */}
         <motion.img
           initial={{ left: "-30%" }}
           whileInView={{ left: "-10%" }}
           className="Crown"
           transition={transition}
-          src={image3}
+          src={image2}
           alt=""
         />
 
@@ -97,5 +98,3 @@ import { Link } from "react-scroll";
         }
 };
 
-
-export default Intro;

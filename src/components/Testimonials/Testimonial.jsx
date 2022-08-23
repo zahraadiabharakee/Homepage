@@ -11,30 +11,30 @@ import profilePic3 from "../../img/quotes.png";
 import profilePic4 from "../../img/quotes.png";
 
 const Testimonial = (props) => {
-  var image ="";
-  if(props.page.quotes_image && props.page.quotes_image.data  && props.page.quotes_image.data.attributes){
-   image= constants.link+props.page.quotes_image.data.attributes.url ;
-  }
+  // var image ="";
+  // if(props.page.quotes_image && props.page.quotes_image.data  && props.page.quotes_image.data.attributes){
+  //  image= constants.link+props.page.quotes_image.data.attributes.url ;
+  // }
   const clients = [
     {
-      img: image,
+      img: profilePic2,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
      
       },
     
     {
-      img: image,
+      img: profilePic2,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: image,
+      img: profilePic2,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: image,
+      img: profilePic2,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
