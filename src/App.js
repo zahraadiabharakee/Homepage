@@ -15,7 +15,7 @@ import {Aboutus} from "./components/Aboutus/AboutUs";
 import {Cms} from "./components/cms/Cms";
 import {Demo} from "./components/demo/Demo";
 import axios from 'axios';
-import {useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {Features} from "./components/AllFeatures/Features"
 import {Article} from "./components/articles/Article";
 import {Products } from "./components/products/Products";
@@ -23,10 +23,10 @@ import Team from "./components/team/Team";
 // import {Stuff} from "./components/productsPage/Stuff";
 // import {StuffTwo} from "./components/productsPage/StuffTwo";
 // import {FeatureProducts} from "./components/productsPage/FeatureProducts";
-// import {Ad} from "./components/productsPage/Ad";
+import {Ad} from "./components/productsPage/Ad";
 import {Intro} from "./components/Intro/Intro";
 import Testimonials from "./components/Testimonials/Testimonial";
-// import Services from "./components/Services/Services";
+import Services from "./components/Services/Services";
 // import Services from "./components/Services/Services"
 // import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
 // import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;

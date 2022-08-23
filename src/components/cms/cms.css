@@ -216,9 +216,10 @@
 
 }
 @media screen and (max-width:768px) {
- 
+  
+  
   .w-right{
-   margin-top: -600px !important;
+   margin-top: -400px !important;
    padding-bottom: -100px !important;
  }
  
