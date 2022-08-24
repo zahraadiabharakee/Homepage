@@ -113,12 +113,12 @@
   z-index: 1;
 }
 .blueCircle {
-  background: #1949b8;
+  background: #F0555D;
   left: 18rem;
   top: 0rem;
 }
 .yellowCircle {
-  background: #ffb236;
+  background: #8260D0;
   left: 18rem;
   top: 8rem;
 }
@@ -161,7 +161,7 @@
   text-align: center !important;
 }
 .cms__content h4{
-  color: #ffb236 !important;
+  color: #8260D0 !important;
   font-size:15px;
   letter-spacing: 2px;
 }
@@ -171,7 +171,7 @@
 .cms__content h2:after{
   display:block;
   height:10px;
-  background-color: #ffb236;
+  background-color: #8260D0;
   content:''; 
   width:140px;
   border-radius: 20px;

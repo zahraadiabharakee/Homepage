@@ -10,6 +10,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 // import { Cards } from "./components/Cards" ;
 // import { MailchimpForm } from "./components/MailchimpForm" ;
+
 import {Chooseus} from "./components/Chooseus/ChooseUs";
 import {Aboutus} from "./components/Aboutus/AboutUs";
 import {Cms} from "./components/cms/Cms";
@@ -27,7 +28,6 @@ import {Ad} from "./components/productsPage/Ad";
 import {Intro} from "./components/Intro/Intro";
 import Testimonials from "./components/Testimonials/Testimonial";
 import Services from "./components/Services/Services";
-// import Services from "./components/Services/Services"
 // import {CmsBanner} from "./components/cms-product-page/CmsBanner" ;
 // import {CmsProducts} from "./components/cms-product-page/CmsProducts" ;
 // import {CmsExperience} from "./components/cms-product-page/CmsExperience" ;
@@ -35,6 +35,7 @@ import Services from "./components/Services/Services";
 // import {CmsDemo} from "./components/cms-product-page/CmsDemo";
 // import {CmsResources} from "./components/cms-product-page/CmsResources";
 // import ProductsPage from "./components/cms-product-page/ProductsPage";
+import Cards from "./components/Cards";
 function App() {
 
   const [error, setError] = useState(null);
@@ -56,7 +57,6 @@ function App() {
       <NavBar page={homePage.Navbar}/>
       <Banner page={homePage.BannerLayout} />
       <Skills page={homePage.clients}/>
-       <Intro page={homePage.Intro}/>  
       <Aboutus page={homePage.cards}/>
       <Chooseus page={homePage.cards} />
       <Demo page={homePage.demo}/>
@@ -64,14 +64,14 @@ function App() {
      <Testimonials page={homePage.quotes}/>
       <Article page={homePage.Team}/>
       <Features page={homePage.features} />
-      <Team />
+     
       <Cms page={homePage.cms} />
       {/* <FeatureProducts />  */}
       <Projects page={homePage.projects}/>
       
       <Contact page={homePage.contactbox} />
       <Footer page={homePage.Footer}/>
-     
+      
       {/* <Ad page={homePage.cards} /> */}
       
 

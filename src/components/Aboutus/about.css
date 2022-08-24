@@ -31,7 +31,7 @@
   text-align: center !important;
 }
 .about__content h4{
-  color: #ffb236 !important;
+  color: #8260D0 !important;
   font-size:15px;
   letter-spacing: 2px;
 }
@@ -41,7 +41,7 @@
 .about__content h2:after{
   display:block;
   height:10px;
-  background-color: #ffb236;
+  background-color: #8260D0;
   content:''; 
   width:140px;
   border-radius: 20px;

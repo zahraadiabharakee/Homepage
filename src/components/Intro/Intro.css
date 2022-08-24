@@ -51,7 +51,7 @@
   color:rgba(68, 68, 68, 0.479) !important;
 }
 .about__intro h4{
-  color: #ffb236 !important;
+  color: #8260D0 !important;
   font-size:15px;
   letter-spacing: 2px;
 }
@@ -61,7 +61,7 @@
 .about__intro h2:after{
   display:block;
   height:10px;
-  background-color: #ffb236;
+  background-color: #8260D0;
   content:''; 
   width:140px;
   border-radius: 20px;
@@ -181,7 +181,7 @@
   text-align: center !important;
 }
 .intro__content h4{
-  color: #ffb236 !important;
+  color: #8260D0 !important;
   font-size:15px;
  
   letter-spacing: 2px;
@@ -194,7 +194,7 @@
 .intro__content h2:after{
   display:block;
   height:10px;
-  background-color: #ffb236;
+  background-color: #8260D0;
   content:''; 
   width:140px;
   border-radius: 20px;

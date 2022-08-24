@@ -20,26 +20,26 @@ export const Cards = (props) => {
   return (
 
     <div className='cards'>
-             <Heading subtitle={props.page.Card_Title} />
+        
          <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">
                     <CardItem 
                     src={image1}
-                    text={props.page.card1description}
+                    text="No limitations - develop and extend your website"
                     label={props.page.card1button}
                     path='/services'
                    
                     />
                      <CardItem
               src={image3}
-              text={props.page.card2description}
+              text="With a user-friendly editing experience, editors"
               label={props.page.card2button}
               path='/services'
             />
               <CardItem
               src={image2}
-              text={props.page.card3button}
+              text="Make your web site personal for each user"
               label={props.page.card3description}
               path='/services'
             />

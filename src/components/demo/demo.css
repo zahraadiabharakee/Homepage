@@ -5,7 +5,7 @@
     
   }
  .Zal {
-    background-color: #ffb236 !important;
+    background-color: #8260D0 !important;
     padding:40px;
  }
   .counter__title {
@@ -26,7 +26,7 @@
 
     .demo__content button {
         background-color: #fff !important;
-        color:#ffb236 !important;
+        color:#8260D0 !important;
         border-radius: 10px;
         
        
@@ -48,7 +48,7 @@
     text-align: center !important;
   }
   .demo__content h4{
-    color: #ffb236 !important;
+    color: #8260D0 !important;
     font-size:15px;
     letter-spacing: 2px;
   }

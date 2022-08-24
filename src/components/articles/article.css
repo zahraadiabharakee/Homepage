@@ -62,7 +62,7 @@
    .details p:before{
     display:block;
     height:3px;
-    background-color: #ffb236;
+    background-color: #8260D0;
     content:''; 
     width:100px;
     border-radius: 20px;
@@ -89,7 +89,7 @@
     opacity: 1;
   }
    .items:hover .overlay i:hover {
-    background-color: #ffb236b9;
+    background-color: #8260D0b9;
     color: #fff;
   }
   @media screen and (max-width:1200px){
