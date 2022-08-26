@@ -37,8 +37,7 @@ export const Projects = (props) => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                   
-   
+                    <p>{props.page.Description1}</p>
                       <button className="buttonProject">View More !</button>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
