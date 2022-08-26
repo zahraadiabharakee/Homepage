@@ -9,8 +9,8 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 // import { Cards } from "./components/Cards" ;
-// import { MailchimpForm } from "./components/MailchimpForm" ;
-
+import { MailchimpForm } from "./components/MailchimpForm" ;
+import Qualification from './components/qualification/Qualification';
 import {Chooseus} from "./components/Chooseus/ChooseUs";
 import {Aboutus} from "./components/Aboutus/AboutUs";
 import {Cms} from "./components/cms/Cms";
@@ -59,9 +59,11 @@ function App() {
       <Skills page={homePage.clients}/>
       <Aboutus page={homePage.cards}/>
       <Chooseus page={homePage.cards} />
+      <Qualification />
       <Demo page={homePage.demo}/>
       <Products page={homePage.products}/>
      <Testimonials page={homePage.quotes}/>
+     <Services />
       <Article page={homePage.Team}/>
       <Features page={homePage.features} />
      
@@ -71,7 +73,7 @@ function App() {
       
       <Contact page={homePage.contactbox} />
       <Footer page={homePage.Footer}/>
-      
+   
       {/* <Ad page={homePage.cards} /> */}
       
 
